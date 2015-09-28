@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+h1.site-title {
+	margin: 100px 0 100px 0;
+	font-family: $font__display;
+	font-size: 72px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+		a {
+			text-decoration: none;
+				color: black;
+		}
+}
+div.site-branding {
+	width: 600px;
+	margin: auto;
+	text-align: center;
+}
+hr.header-hr {
+	background-color: black;
+	width : 150px;
+}
