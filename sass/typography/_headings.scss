@@ -9,6 +9,7 @@ h1.site-title {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	color: $color__text-1;
 		a {
 			text-decoration: none;
 				color: black;
@@ -29,7 +30,7 @@ header {
 h2.entry-title {
 	text-align: center;
 	a {
-	color: $color__text-main;
+	color: $color__text-2;
 	text-decoration: none;
 	}
 }

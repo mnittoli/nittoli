@@ -25,7 +25,7 @@ function nittoli_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'nittoli' ),
+		esc_html_x( '', 'post date', 'nittoli' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 

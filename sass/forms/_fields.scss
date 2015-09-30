@@ -26,16 +26,20 @@ textarea {
 	width: 100%;
 }
 
-div.search input.search-field   
 div.search {
-width: 250px;
+width: 120px;
 margin: auto;
+padding-bottom: 50px;
 }
 div.search input.search-field {
 background: transparent;
+width: 100px;
 border: none;
+border-radius: 0px;
 font-family: playfair-display;
 border-bottom: 1px solid #000;
 text-align: center;
-
+}
+div.search input.search-submit {
+	display:none
 }

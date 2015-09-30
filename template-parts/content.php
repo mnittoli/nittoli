@@ -15,12 +15,15 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php nittoli_posted_on(); ?>
+			<?php the_author(); ?>
+			<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
+			<?php nittoli_posted_on(); ?>				
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */

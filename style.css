@@ -249,7 +249,8 @@ h1.site-title {
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  color: #222; }
   h1.site-title a {
     text-decoration: none;
     color: black; }
@@ -269,7 +270,7 @@ header {
 h2.entry-title {
   text-align: center; }
   h2.entry-title a {
-    color: #404040;
+    color: #444;
     text-decoration: none; }
 
 p.site-description {
@@ -433,17 +434,22 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-div.search input.search-field
 div.search {
-  width: 250px;
-  margin: auto; }
+  width: 120px;
+  margin: auto;
+  padding-bottom: 50px; }
 
 div.search input.search-field {
   background: transparent;
+  width: 100px;
   border: none;
+  border-radius: 0px;
   font-family: playfair-display;
   border-bottom: 1px solid #000;
   text-align: center; }
+
+div.search input.search-submit {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -492,7 +498,9 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    position: relative; }
+    position: relative;
+    display: inline-block;
+    padding-right: 10px; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -636,6 +644,11 @@ a {
 
 div.entry-content {
   text-align: center; }
+  div.entry-content img {
+    width: 100%;
+    color: #666; }
+  div.entry-content p {
+    color: #888; }
 
 h2.entry-title {
   font-size: 4.7em;
@@ -648,7 +661,8 @@ div.entry-meta {
     color: black; }
 
 span.posted-on {
-  color: black; }
+  color: black;
+  font-style: italic; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
