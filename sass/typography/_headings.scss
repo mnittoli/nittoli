@@ -2,12 +2,13 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 h1.site-title {
-	margin: 100px 0 100px 0;
+	margin: 0 0 0.710em;
 	font-family: $font__display;
-	font-size: 72px;
-	font-weight: 400;
+	font-size: 4.200em;
+	font-weight: 900;
 	text-align: center;
 	text-transform: uppercase;
+	letter-spacing: 2px;
 		a {
 			text-decoration: none;
 				color: black;
@@ -21,4 +22,17 @@ div.site-branding {
 hr.header-hr {
 	background-color: black;
 	width : 150px;
+}
+header {
+	padding-bottom: 1em;
+}
+h2.entry-title {
+	text-align: center;
+	a {
+	color: $color__text-main;
+	text-decoration: none;
+	}
+}
+p.site-description {
+	font-family: $font_skinny;
 }

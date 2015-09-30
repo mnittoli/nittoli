@@ -46,11 +46,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+  font-size: 17px; }
 
 body {
   margin: 0; }
@@ -232,7 +234,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Lato", sans-serif;
+  font-family: "Crimson Text", serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -241,12 +243,13 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 h1.site-title {
-  margin: 100px 0 100px 0;
+  margin: 0 0 0.710em;
   font-family: "Playfair Display", serif;
-  font-size: 72px;
-  font-weight: 400;
+  font-size: 4.200em;
+  font-weight: 900;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 2px; }
   h1.site-title a {
     text-decoration: none;
     color: black; }
@@ -259,6 +262,18 @@ div.site-branding {
 hr.header-hr {
   background-color: black;
   width: 150px; }
+
+header {
+  padding-bottom: 1em; }
+
+h2.entry-title {
+  text-align: center; }
+  h2.entry-title a {
+    color: #404040;
+    text-decoration: none; }
+
+p.site-description {
+  font-family: "Lato", sans-serif; }
 
 p {
   margin-bottom: 1.5em; }
@@ -312,7 +327,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #ADD8E5;
+  background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -418,6 +433,18 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+div.search input.search-field
+div.search {
+  width: 250px;
+  margin: auto; }
+
+div.search input.search-field {
+  background: transparent;
+  border: none;
+  font-family: playfair-display;
+  border-bottom: 1px solid #000;
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -441,8 +468,8 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -450,7 +477,6 @@ a {
     padding-left: 0; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
       position: absolute;
       top: 1.5em;
       left: -999em;
@@ -466,11 +492,12 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
     position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #404040;
+    font-style: italic; }
 
 /* Small menu. */
 .menu-toggle,
@@ -595,9 +622,6 @@ a {
   margin: auto;
   width: 900px; }
 
-.site-main {
-  margin: 0 25% 0 0; }
-
 .site-content .widget-area {
   float: right;
   overflow: hidden;
@@ -609,6 +633,22 @@ a {
 
 .site-header {
   background-color: #f8f8f8; }
+
+div.entry-content {
+  text-align: center; }
+
+h2.entry-title {
+  font-size: 4.7em;
+  font-weight: normal; }
+
+div.entry-meta {
+  text-align: center; }
+  div.entry-meta a {
+    text-decoration: none;
+    color: black; }
+
+span.posted-on {
+  color: black; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
