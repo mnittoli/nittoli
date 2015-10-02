@@ -2,7 +2,6 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 h1.site-title {
-	margin: 0 0 0.710em;
 	font-family: $font__display;
 	font-size: 4.200em;
 	font-weight: 900;
@@ -16,7 +15,7 @@ h1.site-title {
 		}
 }
 div.site-branding {
-	width: 600px;
+	max-width: 600px;
 	margin: auto;
 	text-align: center;
 }

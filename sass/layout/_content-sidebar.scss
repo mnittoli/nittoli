@@ -1,6 +1,6 @@
 .content-area {
 	margin: auto;
-	width: $size__site-main;
+	max-width: $size__site-main;
 }
 
 .site-main {
@@ -40,8 +40,18 @@ div.entry-meta {
 	text-decoration: none;
 	color: black;
 	}
+	img {
+	border-radius: 50%;
+	vertical-align: middle;
+	}
 }
 span.posted-on {
 		color: black;
 		font-style: italic;
+}
+.left {
+	text-align: left !important;
+}
+span.capital {
+	text-transform: capitalize;
 }

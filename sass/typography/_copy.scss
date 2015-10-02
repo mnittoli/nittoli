@@ -6,8 +6,11 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 
-blockquote {
+div.entry-content blockquote {
 	margin: 0 1.5em;
+	p {
+	color: #222;
+	}
 }
 
 address {

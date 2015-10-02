@@ -243,7 +243,6 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 h1.site-title {
-  margin: 0 0 0.710em;
   font-family: "Playfair Display", serif;
   font-size: 4.200em;
   font-weight: 900;
@@ -256,7 +255,7 @@ h1.site-title {
     color: black; }
 
 div.site-branding {
-  width: 600px;
+  max-width: 600px;
   margin: auto;
   text-align: center; }
 
@@ -282,8 +281,10 @@ p {
 dfn, cite, em, i {
   font-style: italic; }
 
-blockquote {
+div.entry-content blockquote {
   margin: 0 1.5em; }
+  div.entry-content blockquote p {
+    color: #222; }
 
 address {
   margin: 0 0 1.5em; }
@@ -628,7 +629,7 @@ a {
 --------------------------------------------------------------*/
 .content-area {
   margin: auto;
-  width: 900px; }
+  max-width: 900px; }
 
 .site-content .widget-area {
   float: right;
@@ -659,10 +660,19 @@ div.entry-meta {
   div.entry-meta a {
     text-decoration: none;
     color: black; }
+  div.entry-meta img {
+    border-radius: 50%;
+    vertical-align: middle; }
 
 span.posted-on {
   color: black;
   font-style: italic; }
+
+.left {
+  text-align: left !important; }
+
+span.capital {
+  text-transform: capitalize; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
