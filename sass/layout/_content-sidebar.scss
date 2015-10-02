@@ -33,6 +33,9 @@ div.entry-content {
 h2.entry-title {
 	font-size: 4.7em;
 	font-weight: normal;
+	letter-spacing: -.05em;
+	margin: 0 0 .3em;
+	line-height: 1.1em;
 }
 div.entry-meta {
 	text-align: center;
@@ -54,4 +57,56 @@ span.posted-on {
 }
 span.capital {
 	text-transform: capitalize;
+}
+.entry-content h1 {
+	font-size: 4.2em;
+	letter-spacing: -.035em;
+	line-height: 1.14em;
+	font-weight: 400;
+}
+.entry-content h2 {
+	font-size: 3em;
+	letter-spacing: -.055em;
+	line-height: 1.35em;
+	font-weight: 400;
+}
+.entry-content h3 {
+	font-size: 1.65em;
+	letter-spacing: .03em;
+	line-height: 1.3em;
+	font-weight: 400;
+	maring-bottom: 1em;
+}
+.entry-content h4 {
+	font-size: 1.25em;
+	letter-spacing: .02em;
+	line-height: 1.14em;
+	font-weight: 400;
+}
+.entry-content h5 {
+	font-size: 1em;
+	letter-spacing: .02em;
+	line-height: 1em;
+	font-weight: 400;
+}
+.entry-content h6 {
+	font-size: .75em;
+	letter-spacing: .02em;
+	line-height: .75em;
+	font-weight: 400;
+}
+.post-2col {
+	width: 50%;
+	display: inline-block;
+}
+table, tbody, tr, td {
+	border: 1px solid black;
+}
+tbody {
+	tr:nth-child(odd) {
+	background-color: #eee;
+	}
+	tr:nth-child(even) {
+	background-color: #fff;
+	}
 }
