@@ -150,3 +150,19 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Salvatore js script file.
+ */
+
+function my_scripts_method() {
+	wp_enqueue_script(
+		'custom-script',
+		get_stylesheet_directory_uri() . '/js/salvattore.min.js',
+		array( 'jquery' )
+	);
+}
+
+add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+
+?>
