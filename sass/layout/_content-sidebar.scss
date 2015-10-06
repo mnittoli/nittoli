@@ -95,9 +95,15 @@ span.capital {
 	line-height: .75em;
 	font-weight: 400;
 }
-.post-2col {
-	width: 50%;
-	display: inline-block;
+article.post-2col div.entry-content {
+	-webkit-column-count: 2; 
+	-moz-column-count: 2; 
+	column-count: 2;
+	@media (max-width: 600px) {
+		-webkit-column-count: 1; 
+	-moz-column-count: 1; 
+	column-count: 1;
+	}
 }
 table, tbody, tr, td {
 	border: 1px solid black;

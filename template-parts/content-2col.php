@@ -9,12 +9,12 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="post-2col <?php post_class(); ?>"
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title left"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta post-2col left">
+		<div class="entry-meta left">
 			<span class="capital"><?php the_author(); ?></span>
 			<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
 			<?php the_date(); ?>				
