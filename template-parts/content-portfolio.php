@@ -1,5 +1,5 @@
 <p>Content Loads</p>
-<?php $posts = get_posts( category_name => 'portfolio' ); ?>
+<?php $posts=get_posts( 'category_name=portfolio' ); ?>
 <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 	<p>It works</p>
 	<li>
