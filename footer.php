@@ -23,6 +23,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script src="<?php echo get_stylesheet_directory_uri();?>/js/salvattore.min.js"></script>
 </body>
 </html>

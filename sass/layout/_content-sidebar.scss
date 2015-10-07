@@ -118,8 +118,46 @@ tbody {
 }
 #grid[data-columns]::before {
 	content: '3 .column.size-1of3';
+	@media screen and (max-width: 500px) {
+	content: '1 .column.size-1of1';
+	}
+	@media screen and (min-width: 501px) and (max-width: 800px) {
+	content: '2 .column.size-1of2';
+	}
+	@media screen and (min-width: 801px) {
+	content: '3 .column.size-1of3';
+	}
+}
+#grid {
+	background: red;
+}
+div.grid-title a {
+	font-family: $font_skinny;
+	font-style: none;
+	color: black;
 }
 
 /* These are the classes that are going to be applied: */
-.column { float: left; }
-.size-1of3 { width: 33.333%; }
+div.column div {
+	padding: 5px;
+}
+.column {
+	float: left;
+}
+.size-1of3 {
+	width: 33.333%;
+}
+.size-1of2 { 
+	width: 50%;
+}
+.size-1of1 {
+	width: 100%;
+}
+div.about-container {
+	
+	img {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+}
+}

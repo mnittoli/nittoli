@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	text-transform: capitalize;
 }
 h1.site-title {
 	font-family: $font__display;
@@ -25,6 +26,9 @@ hr.header-hr {
 }
 header {
 	padding-bottom: 1em;
+}
+div.about-container .entry-title {
+	display: none;
 }
 h2.entry-title {
 	text-align: center;

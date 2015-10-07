@@ -240,7 +240,8 @@ textarea {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  text-transform: capitalize; }
 
 h1.site-title {
   font-family: "Playfair Display", serif;
@@ -265,6 +266,9 @@ hr.header-hr {
 
 header {
   padding-bottom: 1em; }
+
+div.about-container .entry-title {
+  display: none; }
 
 h2.entry-title {
   text-align: center; }
@@ -734,13 +738,44 @@ tbody tr:nth-child(even) {
 
 #grid[data-columns]::before {
   content: '3 .column.size-1of3'; }
+  @media screen and (max-width: 500px) {
+    #grid[data-columns]::before {
+      content: '1 .column.size-1of1'; } }
+  @media screen and (min-width: 501px) and (max-width: 800px) {
+    #grid[data-columns]::before {
+      content: '2 .column.size-1of2'; } }
+  @media screen and (min-width: 801px) {
+    #grid[data-columns]::before {
+      content: '3 .column.size-1of3'; } }
+
+#grid {
+  background: red; }
+
+div.grid-title a {
+  font-family: "Lato", sans-serif;
+  font-style: none;
+  color: black; }
 
 /* These are the classes that are going to be applied: */
+div.column div {
+  padding: 5px; }
+
 .column {
   float: left; }
 
 .size-1of3 {
   width: 33.333%; }
+
+.size-1of2 {
+  width: 50%; }
+
+.size-1of1 {
+  width: 100%; }
+
+div.about-container img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px; }
 
 /*--------------------------------------------------------------
 ## Posts and pages

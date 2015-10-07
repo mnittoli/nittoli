@@ -4,7 +4,7 @@
 <div id="grid" data-columns>
 <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 	<div>
-	<div class="grid-title"
+	<div class="grid-title">
 		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 	
 	
