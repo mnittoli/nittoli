@@ -35,6 +35,12 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'portfolio' ); ?>
 			
 		</div>
+		<div class="testimonials">
+
+			<?php get_template_part( 'template-parts/content', 'testimonials' ); ?>
+			
+		</div>
+
 
 
 
