@@ -161,6 +161,22 @@ div.about-container {
 	height: 300px;
 }
 }
-div.testimonials {
-	
+div.testimonials p{
+	font-size: $font_test;
+}
+div.testimonial-author {
+	text-align: right;
+	&::before { content: '—'; }
+}
+div.cat-links a, div.comments-link a, div.edit-link a {
+	font-family: $font_skinny;
+	font-style: none;
+	color: black;
+}
+body.search-results h1 {
+	font-size: 22px;
+}
+body.search-results h2.entry-title {
+	font-size: 22px;
+	text-align: left;
 }

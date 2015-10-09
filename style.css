@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Nittoli
 Theme URI: http://underscores.me/
@@ -781,6 +782,26 @@ div.about-container img {
   border-radius: 50%;
   width: 300px;
   height: 300px; }
+
+div.testimonials p {
+  font-size: 22px; }
+
+div.testimonial-author {
+  text-align: right; }
+  div.testimonial-author::before {
+    content: '—'; }
+
+div.cat-links a, div.comments-link a, div.edit-link a {
+  font-family: "Lato", sans-serif;
+  font-style: none;
+  color: black; }
+
+body.search-results h1 {
+  font-size: 22px; }
+
+body.search-results h2.entry-title {
+  font-size: 22px;
+  text-align: left; }
 
 /*--------------------------------------------------------------
 ## Posts and pages

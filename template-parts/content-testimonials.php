@@ -11,8 +11,8 @@
 	
 <?php the_content(); ?>
 	</div>
-	<div class="grid-title">
-		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+	<div class="testimonial-author">
+		<?php the_title(); ?>
 	
 	
 <?php if ( has_post_thumbnail() ) {

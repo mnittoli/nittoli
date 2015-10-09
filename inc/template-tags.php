@@ -49,20 +49,20 @@ function nittoli_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'nittoli' ) );
 		if ( $categories_list && nittoli_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'nittoli' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<div class="cat-links">' . esc_html__( 'Posted in %1$s', 'nittoli' ) . '</div>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'nittoli' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'nittoli' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<div class="tags-links">' . esc_html__( 'Tagged %1$s', 'nittoli' ) . '</div>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
+		echo '<div class="comments-link">';
 		comments_popup_link( esc_html__( 'Leave a comment', 'nittoli' ), esc_html__( '1 Comment', 'nittoli' ), esc_html__( '% Comments', 'nittoli' ) );
-		echo '</span>';
+		echo '</div>';
 	}
 
 	edit_post_link(
@@ -71,8 +71,8 @@ function nittoli_entry_footer() {
 			esc_html__( 'Edit %s', 'nittoli' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
-		'<span class="edit-link">',
-		'</span>'
+		'<div class="edit-link">',
+		'</div>'
 	);
 }
 endif;
