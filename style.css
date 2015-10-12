@@ -783,8 +783,16 @@ div.about-container img {
   width: 300px;
   height: 300px; }
 
-div.testimonials p {
+div.testimonials
+p {
+  background-color: #f8f8f8;
   font-size: 22px; }
+  div.testimonials
+  p::before {
+    content: "\201C"; }
+  div.testimonials
+  p::after {
+    content: "\201D"; }
 
 div.testimonial-author {
   text-align: right; }

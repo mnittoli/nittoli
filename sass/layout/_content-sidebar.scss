@@ -161,8 +161,16 @@ div.about-container {
 	height: 300px;
 }
 }
-div.testimonials p{
+div.testimonials 
+	p {
+	background-color: $color_header_background;
 	font-size: $font_test;
+	&::before {
+  	content: "\201C";
+	}
+	&::after {
+  	content: "\201D";
+	}
 }
 div.testimonial-author {
 	text-align: right;
