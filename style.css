@@ -639,7 +639,7 @@ a {
 --------------------------------------------------------------*/
 .content-area {
   margin: auto;
-  max-width: 900px; }
+  max-width: 100%; }
 
 .site-content .widget-area {
   float: right;
@@ -648,7 +648,7 @@ a {
 
 .site-footer {
   clear: both;
-  width: 900px; }
+  width: 100%; }
 
 .site-header {
   background-color: #f8f8f8; }
@@ -767,7 +767,8 @@ div.column div {
   padding: 5px; }
 
 .column {
-  float: left; }
+  float: left;
+  padding-bottom: 25px; }
 
 .size-1of3 {
   width: 33.333%; }
@@ -783,15 +784,11 @@ div.about-container img {
   width: 300px;
   height: 300px; }
 
-div.testimonials
-p {
-  background-color: #f8f8f8;
+div.testimonials p {
   font-size: 22px; }
-  div.testimonials
-  p::before {
+  div.testimonials p::before {
     content: "\201C"; }
-  div.testimonials
-  p::after {
+  div.testimonials p::after {
     content: "\201D"; }
 
 div.testimonial-author {
@@ -810,6 +807,16 @@ body.search-results h1 {
 body.search-results h2.entry-title {
   font-size: 22px;
   text-align: left; }
+
+div.centered {
+  max-width: 900px;
+  margin: auto; }
+
+div.portfolio-container {
+  background-color: #f8f8f8; }
+
+div.section-container {
+  padding: 25px 0px; }
 
 /*--------------------------------------------------------------
 ## Posts and pages

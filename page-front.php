@@ -30,12 +30,12 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 			</div>
-		<div class="portfolio-container">
+		<div class="portfolio-container section-container">
 
 			<?php get_template_part( 'template-parts/content', 'portfolio' ); ?>
 			
 		</div>
-		<div class="testimonials">
+		<div class="testimonials section-container">
 
 			<?php get_template_part( 'template-parts/content', 'testimonials' ); ?>
 			

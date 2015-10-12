@@ -4,6 +4,7 @@
 
 <?php $posts=get_posts( $args ); ?>
 <h1 class="categoryName"><?php echo $args["category_name"]; ?></h1>
+<div class="centered">
 <div id="grid" data-columns>
 <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 
@@ -19,5 +20,6 @@
 <?php the_content(); ?>
 	</div>
 <?php endforeach;
-wp_reset_postdata();?>
+wp_reset_postdata();?></div>
 </div>
+<div style="clear:both"></div>

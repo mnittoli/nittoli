@@ -143,6 +143,7 @@ div.column div {
 }
 .column {
 	float: left;
+	padding-bottom: 25px;
 }
 .size-1of3 {
 	width: 33.333%;
@@ -161,16 +162,14 @@ div.about-container {
 	height: 300px;
 }
 }
-div.testimonials 
-	p {
-	background-color: $color_header_background;
-	font-size: $font_test;
-	&::before {
-  	content: "\201C";
-	}
-	&::after {
-  	content: "\201D";
-	}
+div.testimonials p {
+		font-size: $font_test;
+		&::before {
+	  	content: "\201C";
+		}
+		&::after {
+	  	content: "\201D";
+		}
 }
 div.testimonial-author {
 	text-align: right;
@@ -187,4 +186,14 @@ body.search-results h1 {
 body.search-results h2.entry-title {
 	font-size: 22px;
 	text-align: left;
+}
+div.centered {
+	max-width: $size__centered;
+	margin: auto;
+}
+div.portfolio-container {
+	background-color: $color_alternate_background;
+}
+div.section-container {
+	padding: 25px 0px;
 }
