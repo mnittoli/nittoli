@@ -818,6 +818,20 @@ div.portfolio-container {
 div.section-container {
   padding: 25px 0px; }
 
+footer.site-footer {
+  background-color: #f8f8f8;
+  line-height: 1.4em; }
+
+div.back-top {
+  margin: 0 auto 5.5em;
+  padding-top: .5em;
+  text-align: center;
+  width: 200px; }
+  div.back-top a {
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    color: #404040; }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

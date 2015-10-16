@@ -14,6 +14,14 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="back-top">
+			<div class="arrow-up">
+				<a href="#header">BACK TO TOP</a>
+			</div>
+		</div>
+		<div class="footer-social-widgets">
+			<div class="social-widget"></div>
+		</div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nittoli' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'nittoli' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
