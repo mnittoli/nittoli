@@ -14,13 +14,16 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="back-top">
+		<div class="back-top clearfix">
 			<div class="arrow-up">
 				<a href="#header">BACK TO TOP</a>
 			</div>
 		</div>
 		<div class="footer-social-widgets">
-			<div class="social-widget"></div>
+			<a href="#"><img src="<?php echo get_template_directory().'/images/facebook.png'; ?>"/></a>
+			<a href="#"><img src="<?php echo get_template_directory()/images/twitter.png; ?>"/></a>
+			<a href="#">Codepen</a>
+			<div class="footer-widget clearfix"></div>
 		</div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nittoli' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'nittoli' ), 'WordPress' ); ?></a>

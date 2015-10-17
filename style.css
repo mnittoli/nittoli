@@ -832,6 +832,12 @@ div.back-top {
     text-decoration: none;
     color: #404040; }
 
+div.footer-social-widgets {
+  text-align: center; }
+  div.footer-social-widgets a {
+    text-decoration: none;
+    text-align: center; }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
