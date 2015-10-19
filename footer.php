@@ -20,9 +20,9 @@
 			</div>
 		</div>
 		<div class="footer-social-widgets">
-			<a href="#"><img src="<?php echo get_template_directory().'/images/facebook.png'; ?>"/></a>
-			<a href="#"><img src="<?php echo get_template_directory()/images/twitter.png; ?>"/></a>
-			<a href="#">Codepen</a>
+			<a href="#"><img src="<?php echo get_template_directory_uri().'/images/facebook.png'; ?>"/></a>
+			<a href="#"><img src="<?php echo get_template_directory_uri().'/images/twitter.png'; ?>"/></a>
+			<a href="#"><img src="<?php echo get_template_directory_uri().'/images/codepen.png'; ?>"/></a>
 			<div class="footer-widget clearfix"></div>
 		</div>
 		<div class="site-info">

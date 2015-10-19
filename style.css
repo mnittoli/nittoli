@@ -653,13 +653,19 @@ a {
 .site-header {
   background-color: #f8f8f8; }
 
-div.entry-content {
+div.entry-content img {
+  width: 100%;
+  color: #666; }
+div.entry-content p {
+  color: #888; }
+
+h1.entry-title {
+  font-size: 4.7em;
+  font-weight: normal;
+  letter-spacing: -.05em;
+  margin: 0 0 .3em;
+  line-height: 1.1em;
   text-align: center; }
-  div.entry-content img {
-    width: 100%;
-    color: #666; }
-  div.entry-content p {
-    color: #888; }
 
 h2.entry-title {
   font-size: 4.7em;
@@ -818,6 +824,16 @@ div.portfolio-container {
 div.section-container {
   padding: 25px 0px; }
 
+div.nav-previous::before {
+  content: '<';
+  padding: 5px;
+  font-size: 22px; }
+
+div.nav-next::after {
+  content: '>';
+  padding: 5px;
+  font-size: 22px; }
+
 footer.site-footer {
   background-color: #f8f8f8;
   line-height: 1.4em; }
@@ -837,6 +853,12 @@ div.footer-social-widgets {
   div.footer-social-widgets a {
     text-decoration: none;
     text-align: center; }
+  div.footer-social-widgets img {
+    width: 30px;
+    padding: 6px; }
+
+div.site-info {
+  text-align: center; }
 
 /*--------------------------------------------------------------
 ## Posts and pages

@@ -21,7 +21,6 @@
 	background-color: $color_header_background;
 }
 div.entry-content {
-	text-align: center;
 	img {
 	width: 100%;
 	color: $color__text-3;
@@ -29,6 +28,14 @@ div.entry-content {
 	p {
 	color: $color__text-4;
 	}
+}
+h1.entry-title {
+	font-size: 4.7em;
+	font-weight: normal;
+	letter-spacing: -.05em;
+	margin: 0 0 .3em;
+	line-height: 1.1em;
+	text-align: center;
 }
 h2.entry-title {
 	font-size: 4.7em;
@@ -196,4 +203,14 @@ div.portfolio-container {
 }
 div.section-container {
 	padding: 25px 0px;
+}
+div.nav-previous::before {
+	content: '<';
+	padding: 5px;
+	font-size: 22px;
+}
+div.nav-next::after {
+	content: '>';
+	padding: 5px;
+	font-size: 22px;
 }
