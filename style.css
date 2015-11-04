@@ -394,7 +394,6 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
@@ -653,13 +652,19 @@ a {
 .site-header {
   background-color: #f8f8f8; }
 
-div.entry-content {
+div.entry-content img {
+  width: 100%;
+  color: #666; }
+div.entry-content p {
+  color: #888; }
+
+h1.entry-title {
+  font-size: 4.7em;
+  font-weight: normal;
+  letter-spacing: -.05em;
+  margin: 0 0 .3em;
+  line-height: 1.1em;
   text-align: center; }
-  div.entry-content img {
-    width: 100%;
-    color: #666; }
-  div.entry-content p {
-    color: #888; }
 
 h2.entry-title {
   font-size: 4.7em;
@@ -818,6 +823,51 @@ div.portfolio-container {
 div.section-container {
   padding: 25px 0px; }
 
+div.nav-previous::before {
+  content: '< PREVIOUS';
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.5em;
+  display: block;
+  letter-spacing: .076em;
+  padding-bottom: .75em;
+  padding-left: .2em;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: auto; }
+
+div.nav-next::after {
+  content: 'NEXT >';
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.5em;
+  display: block;
+  letter-spacing: .076em;
+  padding-bottom: .75em;
+  padding-left: .2em;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: auto; }
+
+p.form-submit #submit {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  letter-spacing: .04em;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: .5em 1em;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 0px; }
+
+p.logged-in-as {
+  float: right; }
+
+p.comment-form-comment {
+  align: left;
+  clear: all; }
+
 footer {
   height: 300px; }
 
@@ -860,6 +910,12 @@ div.social li {
   padding: 0px 10px; }
 div.social img {
   width: 35px; }
+div.social img {
+  width: 30px;
+  padding: 6px; }
+
+div.site-info {
+  text-align: center; }
 
 /*--------------------------------------------------------------
 ## Posts and pages

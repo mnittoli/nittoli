@@ -21,7 +21,6 @@
 	background-color: $color_header_background;
 }
 div.entry-content {
-	text-align: center;
 	img {
 	width: 100%;
 	color: $color__text-3;
@@ -29,6 +28,14 @@ div.entry-content {
 	p {
 	color: $color__text-4;
 	}
+}
+h1.entry-title {
+	font-size: 4.7em;
+	font-weight: normal;
+	letter-spacing: -.05em;
+	margin: 0 0 .3em;
+	line-height: 1.1em;
+	text-align: center;
 }
 h2.entry-title {
 	font-size: 4.7em;
@@ -196,4 +203,49 @@ div.portfolio-container {
 }
 div.section-container {
 	padding: 25px 0px;
+}
+div.nav-previous::before {
+	content: '< PREVIOUS';
+	font-family: 'Quicksand', sans-serif;
+    font-size: 0.5em;
+    display: block;
+    letter-spacing: .076em;
+    padding-bottom: .75em;
+    padding-left: .2em;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+}
+div.nav-next::after {
+	content: 'NEXT >';
+	font-family: 'Quicksand', sans-serif;
+    font-size: 0.5em;
+    display: block;
+    letter-spacing: .076em;
+    padding-bottom: .75em;
+    padding-left: .2em;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+}
+p.form-submit #submit {
+	font-family: $font_skinny;
+    font-size: 1em;
+    letter-spacing: .04em;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: .5em 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+p.logged-in-as {
+	float: right;
+}
+p.comment-form-comment {
+	align: left;
+	clear: all;
 }
