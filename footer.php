@@ -14,22 +14,43 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="back-top clearfix">
-			<div class="arrow-up">
-				<a href="#header">BACK TO TOP</a>
-			</div>
-		</div>
-		<div class="footer-social-widgets">
-			<a href="#"><img src="<?php echo get_template_directory().'/images/facebook.png'; ?>"/></a>
-			<a href="#"><img src="<?php echo get_template_directory()/images/twitter.png; ?>"/></a>
-			<a href="#">Codepen</a>
-			<div class="footer-widget clearfix"></div>
-		</div>
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nittoli' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'nittoli' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'nittoli' ), 'nittoli', '<a href="http://www.mikenittoli.com" rel="designer">Mike Nittoli</a>' ); ?>
-		</div><!-- .site-info -->
+	<div class="footer-section blog-posts">
+		<ul>
+			<?php
+				$args = array( 'numberposts' => '5' );
+				$recent_posts = wp_get_recent_posts( $args );
+				foreach( $recent_posts as $recent ){
+					echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+				}
+			?>
+		</ul>
+	</div>	
+
+	<div class="footer-section social">
+		<ul>
+			<li>
+				<a href="https://www.facebook.com/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/facebook.png'; ?>"/></a>
+			</li>
+			<li>
+				<img src="<?php echo get_template_directory_uri().'/images/twitter.png'; ?>"/>
+			</li>
+			<li>
+				<img src="<?php echo get_template_directory_uri().'/images/linkedin12.png'; ?>"/>
+			</li>
+			<li>
+				<img src="<?php echo get_template_directory_uri().'/images/codepen.png'; ?>"/>
+			</li>
+			<li>
+				<img src="<?php echo get_template_directory_uri().'/images/cat6.png'; ?>"/>
+			</li>
+		</ul>
+	</div >
+	
+	<div class="footer-section latest-tweets">
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	</div>
+
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

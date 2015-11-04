@@ -1,6 +1,11 @@
+footer {
+	height: 300px;
+}
+
 footer.site-footer {
 	background-color: $color_alternate_background;
 	line-height: 1.4em;
+	height: 200px;
 }
 div.back-top {
 	margin: 0 auto 5.5em;
@@ -19,4 +24,33 @@ div.footer-social-widgets {
 	text-decoration: none;
 	text-align: center;
 	}
+}
+div.footer-section {
+	width: 30%;
+	min-height: 400px;
+	display: inline-block;
+	ul {
+	list-style-type:none;
+	padding: 30px 10px 0px 0px;
+	}
+	
+}
+div.blog-posts {
+	a 	{
+		text-decoration: none;
+		}
+	a:hover {
+		text-decoration: underline;
+	}
+	
+}
+div.social {
+	li {
+		display: inline-block;
+		padding: 0px 10px;
+	}
+	img {
+		width: 35px;
+		}
+
 }
