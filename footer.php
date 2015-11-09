@@ -47,7 +47,7 @@
 	</div >
 	
 	<div class="footer-section latest-tweets">
-		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		<?php get_sidebar(); ?>
 	</div>
 
 
