@@ -1,11 +1,11 @@
 footer {
-	height: 300px;
+	height: 400px;
 }
 
 footer.site-footer {
 	background-color: $color_alternate_background;
 	line-height: 1.4em;
-	height: 200px;
+	height: auto;
 }
 div.back-top {
 	margin: 0 auto 5.5em;
@@ -18,6 +18,10 @@ div.back-top {
 	color: $color__text-main;
 	}
 }	
+div.footer-content {
+	max-width: 1200px;
+	margin: auto;
+}
 div.footer-social-widgets {
 	text-align: center;
 	a {
@@ -26,11 +30,17 @@ div.footer-social-widgets {
 	}
 }
 div.footer-section {
-	width: 30%;
+	width: 33.0%;
+	@media (max-width: 600px) {
+	width: 100%;
+	}
 	display: inline-block;
+	vertical-align: top;
 	ul {
 	list-style-type:none;
-	padding: 30px 10px 0px 0px;
+	padding-top: 30px;
+	margin-left: 0px;
+	padding-left: 0px;
 	}
 }
 div.blog-posts {
@@ -42,6 +52,7 @@ div.blog-posts {
 	}
 }
 div.social {
+	vertical-align: middle;
 	li {
 		display: inline-block;
 		padding: 0px 10px;
@@ -54,11 +65,27 @@ div.social {
 	padding: 6px;
 	}
 }
+div li.social {
+	width: 25%;
+}
 div.latest-tweets {
 	h2 {
-	
+	display: none;
 	}
 }
 div.site-info {
 	text-align: center;
+}
+div.copyrights {
+	background: #333;
+	color: white;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	p {
+	width: 30%;
+	font-family: $font_skinny;
+	font-size: 12px;
+	margin: auto;
+	}
 }

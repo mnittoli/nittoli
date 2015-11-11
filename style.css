@@ -869,12 +869,12 @@ p.comment-form-comment {
   clear: all; }
 
 footer {
-  height: 300px; }
+  height: 400px; }
 
 footer.site-footer {
   background-color: #f8f8f8;
   line-height: 1.4em;
-  height: 200px; }
+  height: auto; }
 
 div.back-top {
   margin: 0 auto 5.5em;
@@ -886,6 +886,10 @@ div.back-top {
     text-decoration: none;
     color: #404040; }
 
+div.footer-content {
+  max-width: 1200px;
+  margin: auto; }
+
 div.footer-social-widgets {
   text-align: center; }
   div.footer-social-widgets a {
@@ -893,28 +897,54 @@ div.footer-social-widgets {
     text-align: center; }
 
 div.footer-section {
-  width: 30%;
-  display: inline-block; }
+  width: 33.0%;
+  display: inline-block;
+  vertical-align: top; }
+  @media (max-width: 600px) {
+    div.footer-section {
+      width: 100%; } }
   div.footer-section ul {
     list-style-type: none;
-    padding: 30px 10px 0px 0px; }
+    padding-top: 30px;
+    margin-left: 0px;
+    padding-left: 0px; }
 
 div.blog-posts a {
   text-decoration: none; }
 div.blog-posts a:hover {
   text-decoration: underline; }
 
-div.social li {
-  display: inline-block;
-  padding: 0px 10px; }
-div.social img {
-  width: 35px; }
-div.social img {
-  width: 30px;
-  padding: 6px; }
+div.social {
+  vertical-align: middle; }
+  div.social li {
+    display: inline-block;
+    padding: 0px 10px; }
+  div.social img {
+    width: 35px; }
+  div.social img {
+    width: 30px;
+    padding: 6px; }
+
+div li.social {
+  width: 25%; }
+
+div.latest-tweets h2 {
+  display: none; }
 
 div.site-info {
   text-align: center; }
+
+div.copyrights {
+  background: #333;
+  color: white;
+  width: 100%;
+  margin: 0px;
+  text-align: center; }
+  div.copyrights p {
+    width: 30%;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    margin: auto; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
