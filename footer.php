@@ -17,13 +17,13 @@
 	<div class="footer-content">
 	<div class="footer-section blog-posts">
 		<ul>
-			<?php
-				$args = array( 'numberposts' => '5' );
-				$recent_posts = wp_get_recent_posts( $args );
-				foreach( $recent_posts as $recent ){
-					echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
-				}
-			?>
+			<li>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
+					<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+				<?php endwhile; else : ?>
+					<p> <?php _e( 'Sorry, no posts matched your criteria.' ) ; ?> </p>
+				<?php endif; ?>
+			</li>
 		</ul>
 	</div>	
 
@@ -41,12 +41,14 @@
 			<li class="social">
 				<a href="https://www.codepen.io/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/codepen.png'; ?>"/></a>
 			</li>
+
 			<li class="social">
 				<a href="https://www.github.com/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/cat6.png'; ?>"/></a>
 			</li>
 			<li class="social">
 				<a href="http://www.codeacademy.com/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/codeacademy.png'; ?>"/></a>
 			</li>
+
 		</ul>
 	</div >
 	

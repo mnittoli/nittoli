@@ -926,7 +926,8 @@ div.social {
     padding: 6px; }
 
 div li.social {
-  width: 25%; }
+  width: 24%;
+  text-align: center; }
 
 div.latest-tweets h2 {
   display: none; }
