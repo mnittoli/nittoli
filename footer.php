@@ -17,13 +17,25 @@
 	<div class="footer-content">
 	<div class="footer-section blog-posts">
 		<ul>
-			<li>
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
-					<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-				<?php endwhile; else : ?>
-					<p> <?php _e( 'Sorry, no posts matched your criteria.' ) ; ?> </p>
-				<?php endif; ?>
-			</li>
+			
+				<?php
+				 $postslist = get_posts('numberposts=5&order=DESC&orderby=date');
+				 foreach ($postslist as $post) :
+				    setup_postdata($post);
+				 ?>
+
+				<li>
+				<?php if (has_post_thumbnail() ) {
+				            the_post_thumbnail(); 
+				} else { ?>
+				            <img src=" <?php echo get_template_directory_uri().'/images/smile.png'; ?>"/>
+				<?php } ?>
+				 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				 </li>
+
+
+				 <?php endforeach; ?>
+			
 		</ul>
 	</div>	
 

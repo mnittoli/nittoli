@@ -46,19 +46,26 @@ div.footer-section {
 div.blog-posts {
 	a 	{
 		text-decoration: none;
+		line-height: 40px;
 		}
 	a:hover {
 		text-decoration: underline;
+	}
+	img {
+		width: 40px;
+		vertical-align: middle;
+		padding-right: 10px;
+
 	}
 }
 div.social {
 	vertical-align: middle;
 	li {
 		display: inline-block;
-		padding: 0px 10px;
+		padding: 0px 15px;
 	}
 	img {
-		width: 35px;
+		width: 50px;
 		}
 	img{
 	width: 30px;
@@ -66,7 +73,7 @@ div.social {
 	}
 }
 div li.social {
-	width: 24%;
+
 	text-align: center;
 }
 div.latest-tweets {

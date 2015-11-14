@@ -656,7 +656,8 @@ div.entry-content img {
   width: 100%;
   color: #666; }
 div.entry-content p {
-  color: #888; }
+  color: #888;
+  font-size: 20px; }
 
 h1.entry-title {
   font-size: 4.7em;
@@ -667,20 +668,24 @@ h1.entry-title {
   text-align: center; }
 
 h2.entry-title {
-  font-size: 4.7em;
+  font-size: 5.7em;
   font-weight: normal;
   letter-spacing: -.05em;
   margin: 0 0 .3em;
-  line-height: 1.1em; }
+  line-height: 1.1em;
+  padding-top: 40px; }
 
 div.entry-meta {
-  text-align: center; }
+  text-align: center;
+  font-size: 20px !important; }
   div.entry-meta a {
     text-decoration: none;
     color: black; }
   div.entry-meta img {
+    width: 70px;
     border-radius: 50%;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin: 15px; }
 
 span.posted-on {
   color: black;
@@ -690,7 +695,8 @@ span.posted-on {
   text-align: left !important; }
 
 span.capital {
-  text-transform: capitalize; }
+  font-size: 20px !important;
+  text-transform: uppercase; }
 
 .entry-content h1 {
   font-size: 4.2em;
@@ -730,9 +736,9 @@ span.capital {
   font-weight: 400; }
 
 article.post-2col div.entry-content {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2; }
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1; }
   @media (max-width: 600px) {
     article.post-2col div.entry-content {
       -webkit-column-count: 1;
@@ -788,6 +794,10 @@ div.about-container img {
   border-radius: 50%;
   width: 300px;
   height: 300px; }
+
+div.main-wrapper {
+  max-width: 1000px;
+  margin: auto; }
 
 div.testimonials p {
   font-size: 22px; }
@@ -910,23 +920,27 @@ div.footer-section {
     padding-left: 0px; }
 
 div.blog-posts a {
-  text-decoration: none; }
+  text-decoration: none;
+  line-height: 40px; }
 div.blog-posts a:hover {
   text-decoration: underline; }
+div.blog-posts img {
+  width: 40px;
+  vertical-align: middle;
+  padding-right: 10px; }
 
 div.social {
   vertical-align: middle; }
   div.social li {
     display: inline-block;
-    padding: 0px 10px; }
+    padding: 0px 15px; }
   div.social img {
-    width: 35px; }
+    width: 50px; }
   div.social img {
     width: 30px;
     padding: 6px; }
 
 div li.social {
-  width: 24%;
   text-align: center; }
 
 div.latest-tweets h2 {

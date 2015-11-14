@@ -27,6 +27,7 @@ div.entry-content {
 	}
 	p {
 	color: $color__text-4;
+	font-size: 20px;
 	}
 }
 h1.entry-title {
@@ -38,21 +39,25 @@ h1.entry-title {
 	text-align: center;
 }
 h2.entry-title {
-	font-size: 4.7em;
+	font-size: 5.7em;
 	font-weight: normal;
 	letter-spacing: -.05em;
 	margin: 0 0 .3em;
 	line-height: 1.1em;
+	padding-top: 40px;
 }
 div.entry-meta {
 	text-align: center;
+	font-size: 20px !important;
 	a {
 	text-decoration: none;
 	color: black;
 	}
 	img {
+	width: 70px;
 	border-radius: 50%;
 	vertical-align: middle;
+	margin: 15px;
 	}
 }
 span.posted-on {
@@ -63,7 +68,8 @@ span.posted-on {
 	text-align: left !important;
 }
 span.capital {
-	text-transform: capitalize;
+	font-size: 20px !important;
+	text-transform: uppercase;
 }
 .entry-content h1 {
 	font-size: 4.2em;
@@ -103,9 +109,9 @@ span.capital {
 	font-weight: 400;
 }
 article.post-2col div.entry-content {
-	-webkit-column-count: 2; 
-	-moz-column-count: 2; 
-	column-count: 2;
+	-webkit-column-count: 1; 
+	-moz-column-count: 1; 
+	column-count: 1;
 	@media (max-width: 600px) {
 		-webkit-column-count: 1; 
 	-moz-column-count: 1; 
@@ -168,6 +174,10 @@ div.about-container {
 	width: 300px;
 	height: 300px;
 }
+}
+div.main-wrapper {
+	max-width: 1000px;
+	margin: auto;
 }
 div.testimonials p {
 		font-size: $font_test;
