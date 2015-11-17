@@ -17,7 +17,7 @@
 		<div class="entry-meta left">
 			<span class="capital"><?php the_author(); ?></span>
 			<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
-			<?php the_date(); ?>				
+			<span><?php the_date(); ?>		</span>		
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

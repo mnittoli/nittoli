@@ -1,6 +1,9 @@
 footer {
 	height: 400px;
 }
+footer.entry-footer {
+	height: 200px;
+}
 
 footer.site-footer {
 	background-color: $color_alternate_background;
@@ -40,7 +43,7 @@ div.footer-section {
 	list-style-type:none;
 	padding-top: 30px;
 	margin-left: 0px;
-	padding-left: 0px;
+
 	}
 }
 div.blog-posts {
@@ -62,14 +65,14 @@ div.social {
 	vertical-align: middle;
 	li {
 		display: inline-block;
-		padding: 0px 15px;
+		padding: 0px 10px;
 	}
 	img {
 		width: 50px;
 		}
 	img{
 	width: 30px;
-	padding: 6px;
+
 	}
 }
 div li.social {

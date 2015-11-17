@@ -650,7 +650,10 @@ a {
   width: 100%; }
 
 .site-header {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 div.entry-content img {
   width: 100%;
@@ -796,8 +799,10 @@ div.about-container img {
   height: 300px; }
 
 div.main-wrapper {
-  max-width: 1000px;
-  margin: auto; }
+  max-width: 80%;
+  margin: auto;
+  max-width: 1100px;
+  width: 100%; }
 
 div.testimonials p {
   font-size: 22px; }
@@ -881,6 +886,9 @@ p.comment-form-comment {
 footer {
   height: 400px; }
 
+footer.entry-footer {
+  height: 200px; }
+
 footer.site-footer {
   background-color: #f8f8f8;
   line-height: 1.4em;
@@ -916,8 +924,7 @@ div.footer-section {
   div.footer-section ul {
     list-style-type: none;
     padding-top: 30px;
-    margin-left: 0px;
-    padding-left: 0px; }
+    margin-left: 0px; }
 
 div.blog-posts a {
   text-decoration: none;
@@ -933,12 +940,11 @@ div.social {
   vertical-align: middle; }
   div.social li {
     display: inline-block;
-    padding: 0px 15px; }
+    padding: 0px 10px; }
   div.social img {
     width: 50px; }
   div.social img {
-    width: 30px;
-    padding: 6px; }
+    width: 30px; }
 
 div li.social {
   text-align: center; }
