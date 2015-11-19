@@ -18,12 +18,27 @@
 	width: $size__site-main;
 }
 .site-header {
+	min-height: 800px;
 	background-color: $color_header_background;
 	background-size: cover !important;
 	background-position: center center;
 	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
 }
-
+div.overlay {
+	background: rgba(11,71,107,0.7);
+	min-height: 800px;
+	padding-top: 200px;
+	vertical-height: 80px;
+}
+div.intro-overlay {
+	background: rgba(0,0,0,0.4);
+	padding-bottom: 4em;
+	width: 70%;
+	margin: auto;
+	vertical-align: middle;
+}
 div.entry-content {
 	img {
 	width: 100%;
@@ -171,6 +186,7 @@ div.column div {
 .size-1of1 {
 	width: 100%;
 }
+
 div.about-container {
 	
 	img {

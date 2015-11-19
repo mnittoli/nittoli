@@ -5,10 +5,12 @@
 	text-align: center;
 
 	ul {
+		width: 90%;
 		display: none;
 		list-style: none;
-		margin: 0;
-		padding-left: 0;
+		margin: auto;
+		padding-left: 0px;
+
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -28,9 +30,11 @@
 				&.focus > ul {
 					left: 100%;
 				}
+
 			}
 
 			a {
+				color: white;
 				width: 200px;
 			}
 
@@ -51,7 +55,12 @@
 	li {
 		position: relative;
 		display: inline-block;
-		padding-right: 10px;
+		padding-right: 0px;
+		margin-right: 2%;
+		margin-left: 2%;
+		margin-bottom: 1em;
+		width: 16%;
+		min-width: 150px;
 
 		&:hover > a,
 		&.focus > a {
@@ -59,9 +68,13 @@
 	}
 	a {
 		display: block;
+		padding: 1em 1em;
 		text-decoration: none;
-		color: $color__text-main;
-		font-style: italic;
+		color: $color__light-1;
+		font-style: none;
+		font-size: 1.2em;
+		padding-bottom: 2em;
+
 	}
 
 	.current_page_item > a,
