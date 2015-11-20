@@ -11,14 +11,14 @@ h1.site-title {
 	letter-spacing: 2px;
 	color: $color__light-1;
 	margin: 0px;
-	padding-top: 40px;
+	padding-top: 80px;
 		a {
 			text-decoration: none;
 			color: white;
 		}
 }
 div.site-branding {
-	max-width: 600px;
+	max-width: 800px;
 	margin: auto;
 	text-align: center;
 }
@@ -44,6 +44,7 @@ p.site-description {
 	font-size: 22px;
 	color: $color__light-2;
 	margin-top: 0;
+	margin-bottom: 2.5em;
 }
 h1.categoryName {
 	text-align: center !important;

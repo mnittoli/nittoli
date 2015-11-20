@@ -31,7 +31,29 @@ div.overlay {
 	min-height: 800px;
 	padding-top: 200px;
 	vertical-height: 80px;
+	div.social-top {
+		height: 45px;
+		vertical-align: middle;
+		margin: auto;
+		width: 70%;
+			ul:after {
+				content:'';
+				clear: both;
+			}
+			li {
+				display: inline-block;
+				float: right;
+				padding: 0px 10px;
+			}
+			img {
+				width: 50px;
+			}
+			img{
+			width: 30px;
+			}
+	}
 }
+
 div.intro-overlay {
 	background: rgba(0,0,0,0.4);
 	padding-bottom: 4em;

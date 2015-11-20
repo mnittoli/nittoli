@@ -118,3 +118,13 @@
 		width: 50%;
 	}
 }
+
+div.menu li.page_item a {
+	font-family: $font_skinny;
+	font-size: 18px;
+}
+div.menu li.page_item a:hover {
+	color: black;
+	background: white;
+	-webkit-transition: all .3s; /* Safari */ transition: all .3s;
+}
