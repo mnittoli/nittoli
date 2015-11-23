@@ -420,7 +420,6 @@ input[type="submit"] {
   input[type="reset"]:hover,
   input[type="submit"]:hover {
     border-color: #ccc #bbb #aaa;
-    background: #fff;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(255, 255, 255, 0); }
   button:active, button:focus,
   input[type="button"]:active,
@@ -698,12 +697,13 @@ div.menu li.page_item a:hover {
 div.overlay {
   background: rgba(11, 71, 107, 0.7);
   min-height: 800px;
-  padding-top: 200px;
+  padding-top: 170px;
   vertical-height: 80px; }
   div.overlay div.social-top {
     height: 45px;
     vertical-align: middle;
     margin: auto;
+    margin-bottom: -160px;
     width: 70%; }
     div.overlay div.social-top ul:after {
       content: '';
@@ -717,7 +717,31 @@ div.overlay {
     div.overlay div.social-top img {
       width: 30px; }
 
+div.bird {
+  margin: auto;
+  position: relative;
+  z-index: 300;
+  width: 400px;
+  margin-bottom: -65px; }
+  div.bird img {
+    width: 100%; }
+
+div.logo {
+  position: relative;
+  z-index: 200;
+  width: 150px;
+  height: 75px;
+  margin: auto;
+  margin-bottom: -75px;
+  border-radius: 0px 0px 200px 200px;
+  background-color: #2d5370; }
+  div.logo img {
+    margin-top: -50px;
+    width: 400px; }
+
 div.intro-overlay {
+  position: relative;
+  z-index: 100;
   background: rgba(0, 0, 0, 0.4);
   padding-bottom: 4em;
   width: 70%;

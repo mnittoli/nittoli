@@ -29,12 +29,16 @@
 div.overlay {
 	background: rgba(11,71,107,0.7);
 	min-height: 800px;
-	padding-top: 200px;
+	padding-top: 170px;
 	vertical-height: 80px;
 	div.social-top {
+	@media (max-width: 1400px) {
+
+	}
 		height: 45px;
 		vertical-align: middle;
 		margin: auto;
+		margin-bottom: -160px;
 		width: 70%;
 			ul:after {
 				content:'';
@@ -53,8 +57,33 @@ div.overlay {
 			}
 	}
 }
-
+div.bird {
+	margin: auto;
+	position: relative;
+	z-index: 300;
+	width: 400px;
+	margin-bottom: -65px;
+	img {
+		width: 100%;
+	}
+}
+div.logo {
+	position: relative;
+	z-index: 200;
+	width: 150px;
+	height: 75px;
+	margin: auto;
+	margin-bottom: -75px;
+	border-radius: 0px 0px 200px 200px;
+	background-color: #2d5370;
+	img {
+		margin-top: -50px;
+		width: 400px;
+	}
+}
 div.intro-overlay {
+	position: relative;
+	z-index: 100;
 	background: rgba(0,0,0,0.4);
 	padding-bottom: 4em;
 	width: 70%;

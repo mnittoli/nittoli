@@ -51,6 +51,12 @@
 							</li>
 						</ul>
 			</div><!--End Social Media Icons-->
+			<div class="bird"><!--Bird Layer-->
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent.png" />
+			</div><!--End Bird Layer-->
+			<div class="logo"><!--Logo Layer-->
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent.png" /> -->
+			</div><!--End Logo Layer-->
 			<div class="intro-overlay">
 				<div class="site-branding">
 				<?php if ( is_front_page() || is_home() ) : ?>
