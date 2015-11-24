@@ -29,17 +29,20 @@
 div.overlay {
 	background: rgba(11,71,107,0.7);
 	min-height: 800px;
-	padding-top: 170px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	vertical-height: 80px;
 	div.social-top {
-	@media (max-width: 1400px) {
-
-	}
-		height: 45px;
+		padding: 25px 0px;
+		width: 300px;
+		height: 100px;
 		vertical-align: middle;
 		margin: auto;
-		margin-bottom: -160px;
-		width: 70%;
+			ul {
+			height: 100px;
+			margin-left: 0px;
+			padding-left: 0px;
+			}
 			ul:after {
 				content:'';
 				clear: both;

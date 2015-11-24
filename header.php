@@ -28,29 +28,7 @@
 
 	<header id="masthead" class="site-header" role="banner" style="background: url('<?php echo( get_header_image() ); ?>');">
 		<div class="overlay">
-			<div class="social-top"><!--Social Media Icons-->
-						<ul>
-							<li class="social">
-								<a href="https://www.facebook.com/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/facebook.png'; ?>"/></a>
-							</li>
-							<li class="social">
-								<a href="https://www.twitter.com/mike_nittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/twitter.png'; ?>"/></a>
-							</li>
-							<li class="social">
-								<a href="https://www.linkedin.com/in/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/linkedin12.png'; ?>"/></a>
-							</li>
-							<li class="social">
-								<a href="https://www.codepen.io/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/codepen.png'; ?>"/></a>
-							</li>
-
-							<li class="social">
-								<a href="https://www.github.com/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/cat6.png'; ?>"/></a>
-							</li>
-							<li class="social">
-								<a href="http://www.codeacademy.com/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/codeacademy.png'; ?>"/></a>
-							</li>
-						</ul>
-			</div><!--End Social Media Icons-->
+			
 			<div class="bird"><!--Bird Layer-->
 				<img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent.png" />
 			</div><!--End Bird Layer-->
@@ -78,6 +56,29 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 			</div>
+			<div class="social-top"><!--Social Media Icons-->
+						<ul>
+							<li class="social">
+								<a href="https://www.facebook.com/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/facebook.png'; ?>"/></a>
+							</li>
+							<li class="social">
+								<a href="https://www.twitter.com/mike_nittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/twitter.png'; ?>"/></a>
+							</li>
+							<li class="social">
+								<a href="https://www.linkedin.com/in/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/linkedin12.png'; ?>"/></a>
+							</li>
+							<li class="social">
+								<a href="https://www.codepen.io/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/codepen.png'; ?>"/></a>
+							</li>
+
+							<li class="social">
+								<a href="https://www.github.com/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/cat6.png'; ?>"/></a>
+							</li>
+							<li class="social">
+								<a href="http://www.codeacademy.com/mnittoli" target="blank"><img src="<?php echo get_template_directory_uri().'/images/codeacademy.png'; ?>"/></a>
+							</li>
+						</ul>
+			</div><!--End Social Media Icons-->
 		</div><!-- #overlay -->
 	</header><!-- #masthead -->
 	<div id="content" class="site-content">
