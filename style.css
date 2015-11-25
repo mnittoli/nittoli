@@ -297,6 +297,9 @@ p.site-description {
   color: #ffcc66;
   margin-top: 0;
   margin-bottom: 2.5em; }
+  @media (max-width: 320px) {
+    p.site-description {
+      margin-bottom: 1em; } }
 
 h1.categoryName {
   text-align: center !important;
@@ -515,7 +518,6 @@ a {
   text-align: center; }
   .main-navigation ul {
     width: 90%;
-    display: none;
     list-style: none;
     margin: auto;
     padding-left: 0px; }
@@ -542,7 +544,7 @@ a {
     padding-right: 0px;
     margin-right: 2%;
     margin-left: 2%;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     width: 16%;
     min-width: 150px; }
   .main-navigation a {
@@ -555,16 +557,9 @@ a {
     padding-bottom: 2em; }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
+.menu-toggle {
+  display: none; }
 
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-
-  .main-navigation ul {
-    display: block; } }
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -584,7 +579,7 @@ a {
 
 div.menu li.page_item a {
   font-family: "Lato", sans-serif;
-  font-size: 18px; }
+  font-size: 15px; }
 
 div.menu li.page_item a:hover {
   color: black;
@@ -712,6 +707,10 @@ div.overlay {
   padding-top: 100px;
   padding-bottom: 100px;
   vertical-height: 80px; }
+  @media (max-width: 320px) {
+    div.overlay {
+      padding-top: 20px;
+      padding-bottom: 20px; } }
   div.overlay div.social-top {
     padding: 25px 0px;
     width: 300px;
@@ -738,10 +737,14 @@ div.bird {
   margin: auto;
   position: relative;
   z-index: 300;
-  width: 400px;
+  width: 70%;
+  max-width: 400px;
   margin-bottom: -65px; }
   div.bird img {
     width: 100%; }
+    @media (max-width: 320px) {
+      div.bird img {
+        max-width: 400px; } }
 
 div.logo {
   position: relative;
@@ -751,7 +754,8 @@ div.logo {
   margin: auto;
   margin-bottom: -75px;
   border-radius: 0px 0px 200px 200px;
-  background-color: #2d5370; }
+  background-color: #2d5370;
+  border-color: #2d5370; }
   div.logo img {
     margin-top: -50px;
     width: 400px; }
@@ -760,7 +764,7 @@ div.intro-overlay {
   position: relative;
   z-index: 100;
   background: rgba(0, 0, 0, 0.4);
-  padding-bottom: 4em;
+  padding-bottom: 1em;
   width: 70%;
   margin: auto;
   vertical-align: middle; }

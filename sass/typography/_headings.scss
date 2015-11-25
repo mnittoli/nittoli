@@ -57,6 +57,9 @@ p.site-description {
 	color: $color__light-2;
 	margin-top: 0;
 	margin-bottom: 2.5em;
+	@media (max-width: 320px) {
+	margin-bottom: 1em;
+	}
 }
 h1.categoryName {
 	text-align: center !important;

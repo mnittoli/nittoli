@@ -31,6 +31,10 @@ div.overlay {
 	min-height: 800px;
 	padding-top: 100px;
 	padding-bottom: 100px;
+	@media (max-width:320px) {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
 	vertical-height: 80px;
 	div.social-top {
 		padding: 25px 0px;
@@ -64,10 +68,14 @@ div.bird {
 	margin: auto;
 	position: relative;
 	z-index: 300;
-	width: 400px;
+	width: 70%;
+	max-width: 400px;
 	margin-bottom: -65px;
 	img {
 		width: 100%;
+		@media (max-width: 320px) {
+		max-width: 400px;
+		}
 	}
 }
 div.logo {
@@ -79,6 +87,7 @@ div.logo {
 	margin-bottom: -75px;
 	border-radius: 0px 0px 200px 200px;
 	background-color: #2d5370;
+	border-color: #2d5370;
 	img {
 		margin-top: -50px;
 		width: 400px;
@@ -88,7 +97,7 @@ div.intro-overlay {
 	position: relative;
 	z-index: 100;
 	background: rgba(0,0,0,0.4);
-	padding-bottom: 4em;
+	padding-bottom: 1em;
 	width: 70%;
 	margin: auto;
 	vertical-align: middle;

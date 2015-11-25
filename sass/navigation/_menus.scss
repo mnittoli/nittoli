@@ -6,7 +6,6 @@
 
 	ul {
 		width: 90%;
-		display: none;
 		list-style: none;
 		margin: auto;
 		padding-left: 0px;
@@ -58,7 +57,7 @@
 		padding-right: 0px;
 		margin-right: 2%;
 		margin-left: 2%;
-		margin-bottom: 1em;
+		margin-bottom: .5em;
 		width: 16%;
 		min-width: 150px;
 
@@ -84,19 +83,11 @@
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
+.menu-toggle {
+	display: none;
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
+
 
 .comment-navigation,
 .posts-navigation,
@@ -121,7 +112,7 @@
 
 div.menu li.page_item a {
 	font-family: $font_skinny;
-	font-size: 18px;
+	font-size: 15px;
 }
 div.menu li.page_item a:hover {
 	color: black;
