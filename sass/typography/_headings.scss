@@ -5,6 +5,18 @@ h1, h2, h3, h4, h5, h6 {
 h1.site-title {
 	font-family: $font__display;
 	font-size: 5.200em;
+	@media (max-width: 1070px) {
+	font-size: 4.200em;
+	}
+	@media (max-width: 850px) {
+	font-size: 3.200em;
+	}
+	@media (max-width: 850px) {
+	font-size: 3.200em;
+	}
+	@media (max-width: 400px) {
+	font-size: 2.200em;
+	}
 	font-weight: 900;
 	text-align: center;
 	text-transform: uppercase;
