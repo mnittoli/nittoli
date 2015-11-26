@@ -57,7 +57,9 @@ p.site-description {
 	color: $color__light-2;
 	margin-top: 0;
 	margin-bottom: 2.5em;
+	padding: 0px 5px;
 	@media (max-width: 320px) {
+	font-size: 18px;
 	margin-bottom: 1em;
 	}
 }
