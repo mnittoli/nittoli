@@ -700,6 +700,9 @@ div.menu li.page_item a:hover {
   background-repeat: no-repeat;
   margin: 0px;
   padding: 0px; }
+  @media (max-width: 320px) {
+    .site-header {
+      min-height: 600px; } }
 
 div.overlay {
   background: rgba(11, 71, 107, 0.7);
@@ -709,8 +712,8 @@ div.overlay {
   vertical-height: 80px; }
   @media (max-width: 320px) {
     div.overlay {
-      padding-top: 20px;
-      padding-bottom: 20px; } }
+      min-height: 600px;
+      padding: 20px 0px; } }
   div.overlay div.social-top {
     padding: 25px 0px;
     width: 300px;

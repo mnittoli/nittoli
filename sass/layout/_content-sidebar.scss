@@ -19,6 +19,9 @@
 }
 .site-header {
 	min-height: 800px;
+	@media (max-width:320px) {
+	min-height: 600px;
+	}
 	background-color: $color_header_background;
 	background-size: cover !important;
 	background-position: center center;
@@ -32,8 +35,8 @@ div.overlay {
 	padding-top: 100px;
 	padding-bottom: 100px;
 	@media (max-width:320px) {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	min-height: 600px;
+	padding: 20px 0px;
 	}
 	vertical-height: 80px;
 	div.social-top {
