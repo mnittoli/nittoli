@@ -35,7 +35,7 @@ div.overlay {
 	padding-bottom: 100px;
 	-webkit-transition: all 1s;
 	transition: all 1s;
-	@media (max-width:320px) {
+	@media (max-width:850px) { /* Overlay Div Breakpoint  */
 	padding: 20px 0px;
 	}
 	vertical-height: 80px;
@@ -43,10 +43,17 @@ div.overlay {
 		padding: 25px 0px;
 		width: 300px;
 		height: 100px;
+		@media (max-width:850px) { /* Overlay Social Div  */
+			height: 50px;
+			padding: 15px 0px;
+			}
 		vertical-align: middle;
 		margin: auto;
 			ul {
 			height: 100px;
+			@media (max-width:850px) { /* UL Breakpoint  */
+			height: 50px;
+			}
 			margin-left: 0px;
 			padding-left: 0px;
 			}
@@ -73,11 +80,15 @@ div.bird {
 	z-index: 300;
 	width: 70%;
 	max-width: 400px;
+	@media (max-width: 850px) { /* Bird Scale Breakpoint  */
+		max-width: 200px;
+		margin-bottom: -55px;
+		}
 	margin-bottom: -65px;
 	img {
 		width: 100%;
-		@media (max-width: 320px) {
-		max-width: 400px;
+		@media (max-width: 850px) { /* Bird Scale Breakpoint  */
+		max-width: 200px;
 		}
 	}
 }
@@ -86,6 +97,11 @@ div.logo {
 	z-index: 200;
 	width: 150px;
 	height: 75px;
+	@media (max-width: 850px) { /* Bird Scale Breakpoint  */
+		width: 100px;
+		height: 50px;
+		margin-bottom: -50px;
+		}
 	margin: auto;
 	margin-bottom: -75px;
 	border-radius: 0px 0px 200px 200px;
@@ -102,6 +118,9 @@ div.intro-overlay {
 	background: rgba(0,0,0,0.4);
 	padding-bottom: 1em;
 	width: 70%;
+	@media (max-width: 850px) { /* Bird Scale Breakpoint  */
+		width: 98%;
+		}
 	margin: auto;
 	vertical-align: middle;
 }
@@ -347,4 +366,7 @@ p.logged-in-as {
 p.comment-form-comment {
 	align: left;
 	clear: all;
+}
+@media (max-width:600px) {
+	
 }

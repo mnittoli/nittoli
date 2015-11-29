@@ -263,9 +263,10 @@ h1.site-title {
   @media (max-width: 850px) {
     h1.site-title {
       font-size: 3.200em; } }
-  @media (max-width: 400px) {
+  @media (max-width: 850px) {
     h1.site-title {
-      font-size: 2.200em; } }
+      font-size: 3.000em;
+      padding-top: 40px; } }
   h1.site-title a {
     text-decoration: none;
     color: white; }
@@ -293,14 +294,14 @@ h2.entry-title {
 
 p.site-description {
   font-family: "Lato", sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   color: #ffcc66;
   margin-top: 0;
   margin-bottom: 2.5em;
   padding: 0px 5px; }
-  @media (max-width: 320px) {
+  @media (min-width: 850px) {
     p.site-description {
-      font-size: 18px;
+      font-size: 26px;
       margin-bottom: 1em; } }
 
 h1.categoryName {
@@ -549,7 +550,7 @@ a {
     margin-left: 2%;
     margin-bottom: .5em;
     width: 16%;
-    min-width: 150px; }
+    min-width: 100px; }
   .main-navigation a {
     display: block;
     padding: 1em 1em;
@@ -582,7 +583,7 @@ a {
 
 div.menu li.page_item a {
   font-family: "Lato", sans-serif;
-  font-size: 15px; }
+  font-size: 17px; }
 
 div.menu li.page_item a:hover {
   color: black;
@@ -712,8 +713,9 @@ div.overlay {
   -webkit-transition: all 1s;
   transition: all 1s;
   vertical-height: 80px; }
-  @media (max-width: 320px) {
+  @media (max-width: 850px) {
     div.overlay {
+      /* Overlay Div Breakpoint  */
       padding: 20px 0px; } }
   div.overlay div.social-top {
     padding: 25px 0px;
@@ -721,10 +723,19 @@ div.overlay {
     height: 100px;
     vertical-align: middle;
     margin: auto; }
+    @media (max-width: 850px) {
+      div.overlay div.social-top {
+        /* Overlay Social Div  */
+        height: 50px;
+        padding: 15px 0px; } }
     div.overlay div.social-top ul {
       height: 100px;
       margin-left: 0px;
       padding-left: 0px; }
+      @media (max-width: 850px) {
+        div.overlay div.social-top ul {
+          /* UL Breakpoint  */
+          height: 50px; } }
     div.overlay div.social-top ul:after {
       content: '';
       clear: both; }
@@ -744,11 +755,17 @@ div.bird {
   width: 70%;
   max-width: 400px;
   margin-bottom: -65px; }
+  @media (max-width: 850px) {
+    div.bird {
+      /* Bird Scale Breakpoint  */
+      max-width: 200px;
+      margin-bottom: -55px; } }
   div.bird img {
     width: 100%; }
-    @media (max-width: 320px) {
+    @media (max-width: 850px) {
       div.bird img {
-        max-width: 400px; } }
+        /* Bird Scale Breakpoint  */
+        max-width: 200px; } }
 
 div.logo {
   position: relative;
@@ -760,6 +777,12 @@ div.logo {
   border-radius: 0px 0px 200px 200px;
   background-color: #2d5370;
   border-color: #2d5370; }
+  @media (max-width: 850px) {
+    div.logo {
+      /* Bird Scale Breakpoint  */
+      width: 100px;
+      height: 50px;
+      margin-bottom: -50px; } }
   div.logo img {
     margin-top: -50px;
     width: 400px; }
@@ -772,6 +795,10 @@ div.intro-overlay {
   width: 70%;
   margin: auto;
   vertical-align: middle; }
+  @media (max-width: 850px) {
+    div.intro-overlay {
+      /* Bird Scale Breakpoint  */
+      width: 98%; } }
 
 div.entry-content img {
   width: 100%;
