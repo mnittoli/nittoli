@@ -14,11 +14,11 @@
 		<?php the_title( sprintf( '<h2 class="entry-title left"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<!-- <div class="entry-meta left">
+		<div class="entry-meta left">
 			<span class="capital"><?php the_author(); ?></span>
 			<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
 			<span><?php the_date(); ?>		</span>		
-		</div>.entry-meta -->
+		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 

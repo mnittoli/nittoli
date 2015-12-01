@@ -117,7 +117,7 @@ div.intro-overlay {
 	z-index: 100;
 	background: rgba(0,0,0,0.4);
 	padding-bottom: 1em;
-	width: 70%;
+	width: 80%;
 	@media (max-width: 850px) { /* Bird Scale Breakpoint  */
 		width: 98%;
 		}
@@ -131,7 +131,7 @@ div.entry-content {
 	}
 	p {
 	color: $color__text-4;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 400;
 	}
 }
@@ -149,7 +149,7 @@ h2.entry-title {
 	letter-spacing: -.05em;
 	margin: 0 0 .3em;
 	line-height: 1.1em;
-	padding-top: 40px;
+	padding-top: 50px;
 }
 div.entry-meta {
 	text-align: center;
@@ -159,10 +159,10 @@ div.entry-meta {
 	color: black;
 	}
 	img {
-	width: 70px;
+	width: 40px;
 	border-radius: 50%;
 	vertical-align: middle;
-	margin: 15px;
+	margin: 5px 5px;
 	}
 }
 span.posted-on {

@@ -2,11 +2,11 @@ footer {
 	height: 400px;
 }
 footer.entry-footer {
-	height: 200px;
+	height: 100px;
 }
 
 footer.site-footer {
-	background-image: url('images/gray_jean.png');
+	background-color: #142837;
 
 	line-height: 1.4em;
 	height: auto;
@@ -51,6 +51,8 @@ div.blog-posts {
 	a 	{
 		text-decoration: none;
 		line-height: 40px;
+		color: white;
+		font-size: 16px;
 		}
 	a:hover {
 		text-decoration: underline;
@@ -89,7 +91,7 @@ div.site-info {
 	text-align: center;
 }
 div.copyrights {
-	background: #333;
+	background-color: #000000;
 	color: white;
 	width: 100%;
 	margin: 0px;

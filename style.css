@@ -298,12 +298,11 @@ p.site-description {
   font-size: 18px;
   color: #ffcc66;
   margin-top: 0;
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
   padding: 0px 5px; }
   @media (min-width: 850px) {
     p.site-description {
-      font-size: 26px;
-      margin-bottom: 1em; } }
+      font-size: 26px; } }
 
 h1.categoryName {
   text-align: center !important;
@@ -320,7 +319,8 @@ div.menu li.page_item {
     padding: 5px; }
 
 p {
-  margin-bottom: 1.8em; }
+  margin-bottom: 1.8em;
+  margin-top: .2em; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -793,7 +793,7 @@ div.intro-overlay {
   z-index: 100;
   background: rgba(0, 0, 0, 0.4);
   padding-bottom: 1em;
-  width: 70%;
+  width: 80%;
   margin: auto;
   vertical-align: middle; }
   @media (max-width: 850px) {
@@ -806,7 +806,7 @@ div.entry-content img {
   color: #333; }
 div.entry-content p {
   color: #444;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400; }
 
 h1.entry-title {
@@ -823,7 +823,7 @@ h2.entry-title {
   letter-spacing: -.05em;
   margin: 0 0 .3em;
   line-height: 1.1em;
-  padding-top: 40px; }
+  padding-top: 50px; }
 
 div.entry-meta {
   text-align: center;
@@ -832,10 +832,10 @@ div.entry-meta {
     text-decoration: none;
     color: black; }
   div.entry-meta img {
-    width: 70px;
+    width: 40px;
     border-radius: 50%;
     vertical-align: middle;
-    margin: 15px; }
+    margin: 5px 5px; }
 
 span.posted-on {
   color: black;
@@ -1034,10 +1034,10 @@ footer {
   height: 400px; }
 
 footer.entry-footer {
-  height: 200px; }
+  height: 100px; }
 
 footer.site-footer {
-  background-image: url("images/gray_jean.png");
+  background-color: #142837;
   line-height: 1.4em;
   height: auto; }
 
@@ -1075,7 +1075,9 @@ div.footer-section {
 
 div.blog-posts a {
   text-decoration: none;
-  line-height: 40px; }
+  line-height: 40px;
+  color: white;
+  font-size: 16px; }
 div.blog-posts a:hover {
   text-decoration: underline; }
 div.blog-posts img {
@@ -1103,7 +1105,7 @@ div.site-info {
   text-align: center; }
 
 div.copyrights {
-  background: #333;
+  background-color: #000000;
   color: white;
   width: 100%;
   margin: 0px;

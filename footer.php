@@ -71,7 +71,7 @@
 	</div>
 	</footer><!-- #colophon -->
 		<div class="copyrights">
-			<p> Copyrights <?php echo date("Y");?> @ Mike Nittoli</p>
+			<p> Copyrights <?php echo date("Y");?> © Mike Nittoli</p>
 		</div>
 </div><!-- #page -->
 
