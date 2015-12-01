@@ -46,8 +46,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Lato:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700,900);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
 html {
   font-family: sans-serif;
@@ -235,7 +236,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Crimson Text", serif;
+  font-family: sans;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -245,11 +246,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize; }
 
 h1.site-title {
-  font-family: "Playfair Display", serif;
+  font-family: "Lobster", cursive;
   font-size: 5.200em;
   font-weight: 900;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 2px;
   color: #fff;
   margin: 0px;
@@ -289,7 +290,7 @@ div.about-container .entry-title {
 h2.entry-title {
   text-align: center; }
   h2.entry-title a {
-    color: #444;
+    color: #222;
     text-decoration: none; }
 
 p.site-description {
@@ -306,7 +307,7 @@ p.site-description {
 
 h1.categoryName {
   text-align: center !important;
-  font-family: "Playfair Display", serif;
+  font-family: "Lobster", cursive;
   font-weight: 400; }
 
 div.menu li.page_item {
@@ -319,7 +320,7 @@ div.menu li.page_item {
     padding: 5px; }
 
 p {
-  margin-bottom: 2.5em; }
+  margin-bottom: 1.8em; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -373,8 +374,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  background-image: url("images/gray_jean.png");
+  /* background: $color__background-body;  Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
   quotes: "" ""; }
@@ -802,22 +803,23 @@ div.intro-overlay {
 
 div.entry-content img {
   width: 100%;
-  color: #666; }
+  color: #333; }
 div.entry-content p {
-  color: #888;
-  font-size: 20px; }
+  color: #444;
+  font-size: 18px;
+  font-weight: 400; }
 
 h1.entry-title {
   font-size: 4.7em;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: -.05em;
   margin: 0 0 .3em;
   line-height: 1.1em;
   text-align: center; }
 
 h2.entry-title {
-  font-size: 5.7em;
-  font-weight: normal;
+  font-size: 2.7em;
+  font-weight: 900;
   letter-spacing: -.05em;
   margin: 0 0 .3em;
   line-height: 1.1em;
@@ -1035,7 +1037,7 @@ footer.entry-footer {
   height: 200px; }
 
 footer.site-footer {
-  background-color: #f8f8f8;
+  background-image: url("images/gray_jean.png");
   line-height: 1.4em;
   height: auto; }
 
