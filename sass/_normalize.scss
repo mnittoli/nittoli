@@ -9,7 +9,9 @@ body {
 	margin: 0;
 }
 
-article,
+article {
+	border-bottom: 1px solid lightgrey;
+}
 aside,
 details,
 figcaption,
