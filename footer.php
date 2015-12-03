@@ -18,24 +18,22 @@
 	<div class="footer-section blog-posts">
 		<ul>
 			
-				<?php
-				 $postslist = get_posts('numberposts=5&order=DESC&orderby=date');
-				 foreach ($postslist as $post) :
-				    setup_postdata($post);
-				 ?>
-
-				<li>
-				<?php if (has_post_thumbnail() ) {
-				            the_post_thumbnail(); 
-				} else { ?>
-				            <img src=" <?php echo get_template_directory_uri().'/images/smile.png'; ?>"/>
-				<?php } ?>
-				 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				 </li>
-
-
-				 <?php endforeach; ?>
-			
+				<?php $args = array('category_name' => 'news'); ?><!-- Sets the variable $args, then declares it an array with one key of category_name with value of news. -->
+					<?php $posts = get_posts($args);  ?> <!-- Sets up a variable called $posts that contains our post arguments above. -->
+					<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?> <!-- Has more than 1 data instance because its an array. All data will be assigned to variable $post -->
+						<li class="blog-posts">
+							<div class="footer-post-thumb"> <!-- Post Thumbnail Image -->
+							<?php if (has_post_thumbnail() ) {
+					            the_post_thumbnail(); 
+					} else { ?>
+					            <img src=" <?php echo get_template_directory_uri().'/images/smile.png'; ?>"/> <?php } ?>
+					        </div>
+					        <div class="footer-post-title"> <!-- Post Title Link  -->
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+							</div>
+						</li>
+					<?php endforeach; 
+					wp_reset_postdata();?> <!-- Runs the same loop again to find and display the next post. -->
 		</ul>
 	</div>	
 

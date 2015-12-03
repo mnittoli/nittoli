@@ -19,7 +19,7 @@ get_header(); ?>
 			<div class="main-wrapper">
 					<?php $args = array('category_name' => 'news'); ?><!-- Sets the variable $args, then declares it an array with one key of category_name with value of news. -->
 					<?php $posts = get_posts($args);  ?> <!-- Sets up a variable called $posts that contains our post arguments above. -->
-					<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?> <!-- Takes the post and posts them. -->
+					<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?> <!-- Has more than 1 data instance because its an array. All data will be assigned to variable $post -->
 					   	<?php get_template_part( 'template-parts/content', 'default' ); ?>
 					<?php endforeach; 
 					wp_reset_postdata();?> <!-- Runs the same loop again to find and display the next post. -->

@@ -34,6 +34,7 @@
 
 		<?php
 			the_excerpt();
+					
 		?>
 
 		<?php
