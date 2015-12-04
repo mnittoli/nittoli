@@ -1081,7 +1081,10 @@ div.footer-section {
   div.footer-section ul {
     list-style-type: none;
     padding-top: 30px;
-    margin-left: 0px; }
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 340px;
+    margin: auto; }
   div.footer-section li.blog-posts {
     padding-top: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -1106,8 +1109,7 @@ div.footer-post-thumb {
   div.footer-post-thumb img {
     border-radius: 5px;
     width: 100%;
-    height: 50px;
-    padding-right: 10px; }
+    height: 50px; }
 
 div.social {
   vertical-align: middle; }
@@ -1115,9 +1117,16 @@ div.social {
     display: inline-block;
     padding: 0px 10px; }
   div.social img {
-    width: 50px; }
-  div.social img {
     width: 30px; }
+
+div.bird-footer {
+  width: 70%;
+  margin: auto;
+  height: 200px;
+  background-size: contain !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 50px; }
 
 div li.social {
   text-align: center; }

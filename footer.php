@@ -60,7 +60,10 @@
 			</li>
 
 		</ul>
+		<div class="bird-footer" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent.png');"> </div><!--Bird Layer-->
+			<!--End Bird Layer-->
 	</div >
+	
 	
 	<div class="footer-section latest-tweets">
 		<?php get_sidebar(); ?>
