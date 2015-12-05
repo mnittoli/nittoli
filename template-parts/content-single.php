@@ -8,17 +8,23 @@
  */
 
 ?>
-<div class="centered">
+<div>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h2 class="entry-title left">', '</h2>' ); ?>
 
-		<div class="entry-meta">
-		
-			<?php nittoli_posted_on(); ?>
+		<div class="entry-meta left">
+				<span class="capital"><?php the_author(); ?></span>
+				<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
+				<span><?php the_date(); ?>		</span>		
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
-
+			<div class="post_featured_image">
+				<?php if (has_post_thumbnail()) {
+						the_post_thumbnail();
+						}
+				?><!-- End Post Featured Image -->
+			</div>
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php

@@ -157,6 +157,12 @@ div.featured-image {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-reapeat;
+	box-shadow: 5px 5px 6px #C0C0C0;
+	padding-right: 0px;
+}
+div.post_featured_image img{
+	box-shadow: 5px 5px 6px #C0C0C0;
+	padding-right: 0px;
 }
 div.entry-meta {
 	text-align: center;
