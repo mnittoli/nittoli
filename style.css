@@ -710,6 +710,11 @@ div.menu li.page_item a:hover {
   margin: 0px;
   padding: 0px; }
 
+div.secondary-header {
+  height: 100px;
+  width: 100%;
+  background: #333; }
+
 div.overlay {
   background: rgba(11, 71, 107, 0.7);
   min-height: 90%;
@@ -1081,6 +1086,7 @@ div.footer-social-widgets {
 
 div.footer-section {
   width: 33%;
+  margin: auto;
   display: inline-block;
   vertical-align: top; }
   @media (max-width: 850px) {
@@ -1093,11 +1099,12 @@ div.footer-section {
     padding-left: 0px;
     width: 100%;
     margin: auto; }
-  div.footer-section li.blog-posts {
-    padding-top: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    padding-bottom: 10px;
-    width: 100%; }
+
+li.blog-posts {
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  width: 100%; }
 
 div.footer-post-title {
   display: inline-block;
@@ -1161,7 +1168,12 @@ div li.social {
 
 div.latest-tweets {
   box-sizing: border-box;
+  width: 30%;
   padding-top: 30px; }
+  @media (max-width: 850px) {
+    div.latest-tweets {
+      width: 100%;
+      padding: 0px 40px; } }
   div.latest-tweets h2 {
     display: none; }
 

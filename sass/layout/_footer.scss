@@ -35,11 +35,12 @@ div.footer-social-widgets {
 }
 div.footer-section {
 	width: 33%;
+	margin: auto;
+	display: inline-block;
+	vertical-align: top;
 	@media (max-width: 850px) {
 	width: 100%;
 	}
-	display: inline-block;
-	vertical-align: top;
 	ul {
 	list-style-type:none;
 	padding-top: 30px;
@@ -47,6 +48,7 @@ div.footer-section {
 	padding-left: 0px;
 	width: 100%;
 	margin: auto;
+	}
 }
 
 li.blog-posts{
@@ -54,8 +56,6 @@ li.blog-posts{
 	border-bottom: 1px solid rgba(0,0,0,0.5);
 	padding-bottom: 10px;
 	width: 100%;
-}
-
 }
 div.footer-post-title {
 	display: inline-block;
@@ -130,7 +130,12 @@ div li.social {
 }
 div.latest-tweets {
 	box-sizing: border-box;
+	width: 30%;
 	padding-top: 30px;
+	@media (max-width: 850px) {
+	width: 100%;
+	padding: 0px 40px;
+	}
 	h2 {
 	display: none;
 	}
