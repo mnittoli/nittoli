@@ -31,7 +31,48 @@
 div.secondary-header {
 	height: 100px;
 	width: 100%;
-	background: #333;
+	background: #142837;
+}
+div.secondary-header-wrapper {
+	max-width: 1100px;
+	margin: auto;
+	height: 100px;
+
+}
+div.secondary-bird {
+	width: 180px;
+	height: auto;
+	background-size: contain !important;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+nav.secondary-navigation {
+	display: inline-block;
+	vertical-alignment: middle;
+	overflow: hidden;
+		ul {
+		width: 100%;
+		list-style: none;
+		margin: auto;
+		padding-left: 0px;
+			li.page_item {
+			display: inline-block;
+			height: 100px;
+			line-height: 100px;
+			border: 0px;
+			}
+			a {
+				line-height: 100px;
+				color: #b7b7b7;
+				text-decoration: none;
+				font-weight: bold;
+				border-radius: 5px;
+				&:hover {
+				color: white !important;
+				background-color: transparent !important;
+				}
+			}
+		}		
 }
 div.overlay {
 	background: rgba(11,71,107,0.7);

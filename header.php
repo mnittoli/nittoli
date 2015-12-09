@@ -81,7 +81,14 @@
 	</header><!-- #masthead -->
 				<?php else  : ?>
 					<div class="secondary-header">
-
+						<div class="secondary-header-wrapper">
+							<div class="secondary-bird"><!--Bird Layer-->
+								<img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent.png" />
+							</div><!--End Bird Layer-->
+							<nav id="site-navigation" class="secondary-navigation" role="navigation">
+								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+							</nav>
+						</div>
 					</div>
 				<?php endif; ?>
 	<div id="content" class="site-content">
