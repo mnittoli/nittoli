@@ -83,8 +83,11 @@
 					<div class="secondary-header">
 						<div class="secondary-header-wrapper">
 							<div class="secondary-bird"><!--Bird Layer-->
-								<img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent.png" />
+								<img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent_white.png" />
 							</div><!--End Bird Layer-->
+							<div class="secondary-logo-name"><!--Name Layer-->
+								<h1 class="secondary-name"><?php bloginfo( 'name' ); ?></h1>
+							</div><!--End Name Layer-->
 							<nav id="site-navigation" class="secondary-navigation" role="navigation">
 								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 							</nav>
