@@ -29,19 +29,20 @@
 	padding: 0px;
 }
 div.secondary-header {
-	height: 100px;
+	height: 80px;
 	width: 100%;
 	background: #142837;
 }
 div.secondary-header-wrapper {
-	max-width: 100%;
+	max-width: 1100px;
 	margin: auto;
-	height: 100px;
+	height: 80px;
 
 }
 div.secondary-bird {
-	width: 180px;
+	width: 130px;
 	height: auto;
+	padding-top: 10px;
 	background-size: contain !important;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -57,13 +58,13 @@ h1.secondary-name {
 	color: white;
 	width: 200px;
 	height: auto;
-	font-size: 22px;
+	font-size: 20px;
 
 }
 nav.secondary-navigation {
 	display: inline-block;
-	vertical-alignment: middle;
-	overflow: hidden;
+	float: right;
+
 		ul {
 		width: 100%;
 		list-style: none;
@@ -71,8 +72,8 @@ nav.secondary-navigation {
 		padding-left: 0px;
 			li.page_item {
 			display: inline-block;
-			height: 100px;
-			line-height: 100px;
+			height: 80px;
+			line-height: 80px;
 			border: 0px;
 			}
 			a {
