@@ -78,4 +78,23 @@
 			self = self.parentElement;
 		}
 	}
+
+	// Toggle Secondary Nav Menu
+	$(function() {
+		alert("works");
+	  var pull = $('.toggle-secondary-menu');
+	  var menu = $('nav.secondary-navigation');
+	    $(pull).on('click', function(e) {
+	    	alert("clicked");
+	          e.preventDefault();
+	          menu.slideToggle();
+	    });
+	 $(window).resize(function(){
+	    var w = $(window).width();
+	    if(w > 700 && menu.is(':hidden')) {
+	        menu.removeAttr('style');
+	    }
+	});
+	});
+
 } )();
