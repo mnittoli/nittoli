@@ -319,8 +319,10 @@ div.menu li.page_item {
   text-align: center; }
   div.menu li.page_item a {
     width: 100%;
-    margin: 0 1.5em 0 0;
     padding: 5px; }
+
+nav.secondary-nav li.page_item a {
+  margin: 0 0 0 1.5em; }
 
 p {
   margin-bottom: 1.8em;
@@ -588,8 +590,7 @@ a {
 
 div.menu li.page_item a {
   font-family: "Lato", sans-serif;
-  font-size: 17px;
-  margin: 0 0 0 1.5em; }
+  font-size: 17px; }
 
 div.menu li.page_item a:hover {
   color: black;
@@ -775,12 +776,12 @@ nav.secondary-navigation {
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px; }
+      @media (max-width: 700px) {
+        nav.secondary-navigation ul a {
+          line-height: 50px; } }
       nav.secondary-navigation ul a:hover {
-        color: #b7b7b7 !important;
+        color: #D3D3D3 !important;
         background-color: transparent !important; }
-        @media (max-width: 700px) {
-          nav.secondary-navigation ul a:hover {
-            line-height: 50px; } }
 
 div.toggle-secondary-menu {
   display: inline-block;
@@ -1056,7 +1057,8 @@ div.main-wrapper {
   max-width: 80%;
   margin: auto;
   max-width: 1100px;
-  width: 100%; }
+  width: 100%;
+  padding-top: 60px; }
 
 div.testimonials p {
   font-size: 22px; }
