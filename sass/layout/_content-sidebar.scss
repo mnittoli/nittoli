@@ -34,6 +34,8 @@ div.secondary-header {
 	background-size: cover !important;
 	background-position: fixed;
 	background-repeat: no-repeat;
+	position: fixed;
+	top: 0px;
 }
 div.secondary-overlay {
 	width: 100%;
@@ -43,10 +45,11 @@ div.secondary-header-wrapper {
 	max-width: 1100px;
 	margin: auto;
 	height: 80px;
+
 }
 div.secondary-bird {
 	width: 130px;
-	height: auto;
+	height: 80px;
 	padding-top: 10px;
 	background-size: contain !important;
 	background-repeat: no-repeat;
@@ -62,19 +65,32 @@ h1.secondary-name {
 nav.secondary-navigation {
 	display: inline-block;
 	float: right;
+	
 	@media (max-width:700px) {
+	background-color: #142837;
 	display: none;
+	position: fixed;
+	width: 100%;
+
 	}
 		ul {
 		width: 100%;
 		list-style: none;
 		margin: auto;
 		padding-left: 0px;
+
 			li.page_item {
 			display: inline-block;
 			height: 80px;
-			line-height: 80px;
 			border: 0px;
+			
+			@media (max-width:700px) {
+			border-bottom: 1px solid #393B4D;
+			display: block;
+			line-height: 50px;
+			text-align: center;
+			height: 50px;
+			}
 			}
 			a {
 				line-height: 80px;
@@ -85,6 +101,9 @@ nav.secondary-navigation {
 				&:hover {
 				color: #b7b7b7 !important;
 				background-color: transparent !important;
+				@media (max-width:700px) {
+				line-height: 50px;
+				}
 				}
 			}
 		}		

@@ -415,7 +415,7 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  max-width: 100%;
+  width: 100%;
   /* Adhere to container width. */ }
 
 table {
@@ -588,7 +588,8 @@ a {
 
 div.menu li.page_item a {
   font-family: "Lato", sans-serif;
-  font-size: 17px; }
+  font-size: 17px;
+  margin: 0 0 0 1.5em; }
 
 div.menu li.page_item a:hover {
   color: black;
@@ -715,7 +716,9 @@ div.secondary-header {
   width: 100%;
   background-size: cover !important;
   background-position: fixed;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0px; }
 
 div.secondary-overlay {
   width: 100%;
@@ -728,7 +731,7 @@ div.secondary-header-wrapper {
 
 div.secondary-bird {
   width: 130px;
-  height: auto;
+  height: 80px;
   padding-top: 10px;
   background-size: contain !important;
   background-repeat: no-repeat;
@@ -746,7 +749,10 @@ nav.secondary-navigation {
   float: right; }
   @media (max-width: 700px) {
     nav.secondary-navigation {
-      display: none; } }
+      background-color: #142837;
+      display: none;
+      position: fixed;
+      width: 100%; } }
   nav.secondary-navigation ul {
     width: 100%;
     list-style: none;
@@ -755,8 +761,14 @@ nav.secondary-navigation {
     nav.secondary-navigation ul li.page_item {
       display: inline-block;
       height: 80px;
-      line-height: 80px;
       border: 0px; }
+      @media (max-width: 700px) {
+        nav.secondary-navigation ul li.page_item {
+          border-bottom: 1px solid #393B4D;
+          display: block;
+          line-height: 50px;
+          text-align: center;
+          height: 50px; } }
     nav.secondary-navigation ul a {
       line-height: 80px;
       color: white;
@@ -766,6 +778,9 @@ nav.secondary-navigation {
       nav.secondary-navigation ul a:hover {
         color: #b7b7b7 !important;
         background-color: transparent !important; }
+        @media (max-width: 700px) {
+          nav.secondary-navigation ul a:hover {
+            line-height: 50px; } }
 
 div.toggle-secondary-menu {
   display: inline-block;
@@ -1256,7 +1271,7 @@ div.copyrights {
   margin: 0px;
   text-align: center; }
   div.copyrights p {
-    width: 30%;
+    width: 60%;
     font-family: "Lato", sans-serif;
     font-size: 12px;
     margin: auto; }

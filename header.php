@@ -30,7 +30,7 @@
 		<div class="overlay">
 			
 			<div class="bird"><!--Bird Layer-->
-				<img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent.png" />
+				<a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent.png" /></a>
 			</div><!--End Bird Layer-->
 			<div class="logo"><!--Logo Layer-->
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent.png" /> -->
@@ -84,15 +84,15 @@
 						<div class="secondary-overlay">
 							<div class="secondary-header-wrapper">
 								<div class="secondary-bird"><!--Bird Layer-->
-									<img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent_white.png" />
+									<a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_bird_transparent_white.png" /></a>
 								</div><!--End Bird Layer-->
-								
-								<nav id="site-navigation" class="secondary-navigation" role="navigation">
-									<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-								</nav>
 								<div class="toggle-secondary-menu">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/menu48.png" />
 								</div>
+								<nav id="site-navigation" class="secondary-navigation" role="navigation">
+									<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+								</nav>
+								
 							</div>
 						</div>
 					</div>
