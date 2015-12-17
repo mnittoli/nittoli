@@ -321,9 +321,6 @@ div.menu li.page_item {
     width: 100%;
     padding: 5px; }
 
-nav.secondary-nav li.page_item a {
-  margin: 0 0 0 1.5em; }
-
 p {
   margin-bottom: 1.8em;
   margin-top: .2em; }
@@ -699,6 +696,9 @@ div.menu li.page_item a:hover {
   overflow: hidden;
   width: 25%; }
 
+div.site-content {
+  padding-top: 120px; }
+
 .site-footer {
   clear: both;
   width: 100%; }
@@ -775,9 +775,11 @@ nav.secondary-navigation {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 5px; }
+      border-radius: 5px;
+      margin-right: 1.5em; }
       @media (max-width: 700px) {
         nav.secondary-navigation ul a {
+          margin-right: auto;
           line-height: 50px; } }
       nav.secondary-navigation ul a:hover {
         color: #D3D3D3 !important;
@@ -907,7 +909,7 @@ h1.entry-title {
   font-size: 4.7em;
   font-weight: bold;
   letter-spacing: -.05em;
-  margin: 0 0 .3em;
+  margin: 0px;
   line-height: 1.1em;
   text-align: center; }
 
@@ -918,6 +920,16 @@ h2.entry-title {
   margin: 0 0 .3em;
   line-height: 1.1em;
   padding-top: 50px; }
+
+div.line-container {
+  width: 300px;
+  height: 10px;
+  margin: auto; }
+
+span.left-line, span.right-line {
+  width: 100px;
+  height: 10px;
+  border-bottom: 1px solid #ccc; }
 
 div.featured-image {
   height: 200px;
