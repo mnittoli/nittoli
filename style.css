@@ -921,14 +921,30 @@ h2.entry-title {
   line-height: 1.1em;
   padding-top: 50px; }
 
+article.page header.entry-header {
+  padding-bottom: 0px; }
+
+article.page {
+  padding: 0px 10px; }
+
 div.line-container {
-  width: 300px;
+  width: 221px;
   height: 10px;
   margin: auto; }
+  div.line-container span {
+    display: inline-block; }
+
+span.middle-line {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-bottom: -5px; }
 
 span.left-line, span.right-line {
+  height: 5px;
   width: 100px;
-  height: 10px;
   border-bottom: 1px solid #ccc; }
 
 div.featured-image {
