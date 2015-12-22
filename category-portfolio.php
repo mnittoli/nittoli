@@ -15,13 +15,16 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					<h1> single_cat_title(); </h1>
-	
-				?>
+				
+					<h1 class="title"> <?php single_cat_title(); ?></h1>
+					<div class="line-container"><!-- .line -->
+						<span class="left-line"></span>
+						<span class="middle-line"></span>
+						<span class="right-line"></span>
+					</div>
+				
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<div class="portfolio-post"><a href="<?php the_permalink(); ?>"title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
