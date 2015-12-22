@@ -1167,6 +1167,16 @@ p.comment-form-comment {
   align: left;
   clear: all; }
 
+div.portfolio-post {
+  width: 300px;
+  margin: auto;
+  display: inline-block; }
+  div.portfolio-post a {
+    display: block; }
+  div.portfolio-post img {
+    width: 200px;
+    height: 200px; }
+
 footer {
   height: 400px; }
 

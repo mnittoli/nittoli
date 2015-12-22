@@ -517,3 +517,15 @@ p.comment-form-comment {
 @media (max-width:600px) {
 	
 }
+div.portfolio-post {
+	width: 300px;
+	margin: auto;
+	a {
+	display: block;
+	}
+	display: inline-block;
+	img {
+	width: 200px;
+	height: 200px;
+	}
+}

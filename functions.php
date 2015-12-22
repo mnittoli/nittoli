@@ -242,4 +242,7 @@ function custom_excerpt_length( $length ) {
 					}
 					add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 }
+
+@ini_set ('upload_max_size' , '64M');
+@ini_set ('post_max_size' , '64M');
 ?>
