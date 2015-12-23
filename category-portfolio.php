@@ -9,10 +9,14 @@
 
 get_header(); ?>
 
+
+
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+	<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				
@@ -25,16 +29,18 @@ get_header(); ?>
 				
 			</header><!-- .page-header -->
 
+			<div id="portfolio-grid" data-columns><!-- Grid Begins -->
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="portfolio-post"><a href="<?php the_permalink(); ?>"title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
-			<?php if (has_post_thumbnail() ){
-				the_post_thumbnail();
-			}
-			?></a>
-			</div>
+			<div><a href="<?php the_permalink(); ?>"title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
+				<?php if (has_post_thumbnail() ){
+					the_post_thumbnail();
+				}
+				?></a>
+				</div>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
+			</div><!-- Grid Ends -->
 
 			<?php the_posts_navigation(); ?>
 
@@ -46,6 +52,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
 
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>

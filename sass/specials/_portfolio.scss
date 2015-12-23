@@ -2,11 +2,7 @@ div.portfolio-post {
 	width: 300px;
 	margin: auto;
 	display: inline-block;
-	a {
-	display: block;
-	}
-	
-
+	vertical-align: top;
 }
 h1.title {
 	text-align: center;
@@ -33,10 +29,44 @@ span.middle-line {
 	border-radius: 50%;
 	vertical-align: middle;
 	margin-bottom: -5px;
-
 }
 span.left-line, span.right-line {
 	height: 5px;
 	width: 100px;
 	border-bottom: 1px solid #ccc;
 }
+#portfolio-grid[data-columns]::before {
+	content: '4 .column.size-1of4';
+}
+
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of4 { width: 25%; }
+
+@media screen and (max-width: 480px){
+	#portfolio-grid[data-columns]::before {
+		content: '1 .column.size-1of1';
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	#portfolio-grid[data-columns]::before {
+		content: '2 .column.size-1of2';
+	}
+}
+@media screen and (min-width: 769px) {
+	#portfolio-grid[data-columns]::before {
+		content: '3 .column.size-1of3';
+	}
+}
+@media screen and (min-width: 1000px) {
+	#portfolio-grid[data-columns]::before {
+		content: '4 .column.size-1of4';
+	}
+}
+
+/* Again, you’re free to use and define the classes: */
+.column { float: left; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.333%; }
