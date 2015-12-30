@@ -91,11 +91,9 @@ div.portfolio-content {
 	transition: 3s all ease;
 	&:hover {
 	img {
-
-
-	width: 120%;
-	margin-top: -60px;
-	margin-left: -60px;
+	width: 125%;
+	margin-top: -25px;
+	margin-left: -25px;
 	}
 	}
 	a {
@@ -104,7 +102,6 @@ div.portfolio-content {
 	transition: .5s all ease;
 	}
 	}
-	
 }
 
 p.portfolio-title {
@@ -120,6 +117,7 @@ p.portfolio-title {
 	z-index: 100;
 	transition: 0.2s background ease;
 	span {
+	display: none;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -133,6 +131,9 @@ p.portfolio-title {
 	color: #000;
 	margin-bottom: -400px;
 	position: absolute;
+	span {
+		display: block;
+	}
 	}
 }
 
