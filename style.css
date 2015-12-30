@@ -1444,7 +1444,8 @@ h1.title {
 div.line-container {
   width: 221px;
   height: 10px;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 20px; }
   div.line-container span {
     display: inline-block; }
 
@@ -1466,7 +1467,12 @@ span.left-line, span.right-line {
 
 /* These are the classes that are going to be applied: */
 .column {
-  float: left; }
+  float: left;
+  padding: 0px 0px;
+  margin: 0px; }
+  .column:hover {
+    color: #D3D3D3 !important;
+    background-color: transparent !important; }
 
 .size-1of4 {
   width: 25%; }
@@ -1495,5 +1501,49 @@ span.left-line, span.right-line {
 
 .size-1of3 {
   width: 33.333%; }
+
+div.portfolio-content {
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 50px;
+  transition: 3s all ease; }
+  div.portfolio-content:hover img {
+    width: 120%;
+    margin-top: -60px;
+    margin-left: -60px; }
+  div.portfolio-content a {
+    color: #000; }
+    div.portfolio-content a img {
+      transition: .5s all ease; }
+
+p.portfolio-title {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: block;
+  background: rgba(11, 71, 107, 0.2);
+  margin-bottom: -400px;
+  margin-top: 0px;
+  position: relative;
+  z-index: 100;
+  transition: 0.2s background ease; }
+  p.portfolio-title span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    padding-bottom: 20px; }
+  p.portfolio-title:hover {
+    background: transparent;
+    color: #000;
+    margin-bottom: -400px;
+    position: absolute; }
+
+div.column div {
+  padding: 0px; }
 
 /*# sourceMappingURL=style.css.map */

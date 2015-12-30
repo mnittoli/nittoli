@@ -32,7 +32,8 @@ get_header(); ?>
 			<div id="portfolio-grid" data-columns><!-- Grid Begins -->
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<div><a href="<?php the_permalink(); ?>"title="<?php the_title_attribute(); ?>"><?php the_title(); ?>
+			<div class="portfolio-content"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+				<p class="portfolio-title"><?php the_title(); ?></p>
 				<?php if (has_post_thumbnail() ){
 					the_post_thumbnail();
 				}
