@@ -1469,7 +1469,7 @@ span.left-line, span.right-line {
 .column {
   float: left;
   padding: 0px 0px;
-  margin: 1px 1px; }
+  /* margin: 1px 1px; */ }
   .column:hover {
     color: #D3D3D3 !important;
     background-color: transparent !important; }
@@ -1500,11 +1500,11 @@ span.left-line, span.right-line {
   width: 33.333%; }
 
 .size-1of4 {
-  width: 23%; }
+  width: 25%; }
 
 div.portfolio-content {
-  margin-bottom: 1px;
-  margin-top: 1px;
+  /* margin-bottom: 1px; */
+  /* margin-top: 1px; */
   height: 400px;
   overflow: hidden;
   text-align: center;
@@ -1519,20 +1519,21 @@ div.portfolio-content {
     div.portfolio-content a img {
       transition: .5s all ease; }
 
-p.portfolio-title {
+div.portfolio-title {
   height: 400px;
   width: 100%;
+  padding: 10px;
   text-align: center;
   color: #fff;
   display: block;
-  background: rgba(11, 71, 107, 0.2);
   margin-bottom: -400px;
   margin-top: 0px;
   position: relative;
   z-index: 100;
   transition: 0.2s background ease; }
-  p.portfolio-title span {
+  div.portfolio-title div.title-txt {
     display: none;
+    background-color: black;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1540,19 +1541,18 @@ p.portfolio-title {
     text-align: center;
     height: 50px;
     padding-bottom: 20px; }
-  p.portfolio-title:hover {
-    background: transparent;
+  div.portfolio-title:hover {
+    background: rgba(11, 71, 107, 0.5);
     color: #000;
     margin-bottom: -400px;
     position: absolute; }
-    p.portfolio-title:hover span {
+    div.portfolio-title:hover div.title-txt {
       display: block; }
 
 div.column div {
   padding: 0px; }
 
 #portfolio-grid {
-  width: 1500px;
   margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

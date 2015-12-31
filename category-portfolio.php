@@ -33,7 +33,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<div class="portfolio-content"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-				<p class="portfolio-title"><?php the_title(); ?></p>
+				<div class="portfolio-title"><div class="title-txt"><?php the_title(); ?></div></div>
 				<?php if (has_post_thumbnail() ){
 					the_post_thumbnail();
 				}
