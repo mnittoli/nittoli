@@ -1510,14 +1510,8 @@ div.portfolio-content {
   text-align: center;
   padding-bottom: 50px;
   transition: 3s all ease; }
-  div.portfolio-content:hover img {
-    width: 125%;
-    margin-top: -35px;
-    margin-left: -35px; }
   div.portfolio-content a {
     color: #000; }
-    div.portfolio-content a img {
-      transition: .5s all ease; }
 
 div.portfolio-title {
   height: 400px;
@@ -1543,9 +1537,8 @@ div.portfolio-title {
     padding-bottom: 20px; }
   div.portfolio-title:hover {
     background: rgba(11, 71, 107, 0.5);
-    color: #000;
-    margin-bottom: -400px;
-    position: absolute; }
+    color: #fff;
+    margin-bottom: -400px; }
     div.portfolio-title:hover div.title-txt {
       display: block; }
 

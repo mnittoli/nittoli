@@ -92,17 +92,9 @@ div.portfolio-content {
 	padding-bottom: 50px;
 	transition: 3s all ease;
 	&:hover {
-	img {
-	width: 125%;
-	margin-top: -35px;
-	margin-left: -35px;
-	}
 	}
 	a {
 	color: #000;
-	img {
-	transition: .5s all ease;
-	}
 	}
 }
 
@@ -113,7 +105,6 @@ div.portfolio-title {
 	text-align: center;
 	color: #fff;
 	display: block;
-	
 	margin-bottom: -400px;
 	margin-top: 0px;
 	position: relative;
@@ -132,11 +123,11 @@ div.portfolio-title {
 	}
 	&:hover {
 	background: rgba(11,71,107,0.5);
-	color: #000;
+	color: #fff;
 	margin-bottom: -400px;
-	position: absolute;
 	div.title-txt {
 		display: block;
+	
 	}
 	}
 }
@@ -146,6 +137,5 @@ div.column div {
 }
 
 #portfolio-grid {
-	
 	margin: auto;
 }
