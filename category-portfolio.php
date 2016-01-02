@@ -29,6 +29,15 @@ get_header(); ?>
 				
 			</header><!-- .page-header -->
 
+			<div class="sub-categoires">
+				<?php $args = array('child_of' => 3);
+					$categories = get_categories( $args );
+					foreach($categories as $category) { 
+					    echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" class="sub-categories"' . '>' . $category->name.'</a> '; 
+					}
+				?>
+			</div>
+
 			<div id="portfolio-grid" data-columns><!-- Grid Begins -->
 			<?php while ( have_posts() ) : the_post(); ?>
 

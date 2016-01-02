@@ -1462,6 +1462,22 @@ span.left-line, span.right-line {
   width: 100px;
   border-bottom: 1px solid #ccc; }
 
+div.sub-categoires {
+  width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px; }
+  div.sub-categoires a.sub-categories {
+    margin-right: 10px;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px; }
+    div.sub-categoires a.sub-categories:hover {
+      background-color: #284F6C;
+      color: white; }
+
 #portfolio-grid[data-columns]::before {
   content: '4 .column.size-1of4'; }
 
@@ -1527,25 +1543,29 @@ div.portfolio-title {
   transition: 0.2s background ease; }
   div.portfolio-title div.title-txt {
     display: none;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center;
     height: 50px;
     padding-bottom: 20px; }
   div.portfolio-title:hover {
-    background: rgba(11, 71, 107, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     margin-bottom: -400px; }
     div.portfolio-title:hover div.title-txt {
-      display: block; }
+      display: block;
+      height: 100px;
+      padding-top: 150px; }
 
 div.column div {
   padding: 0px; }
 
 #portfolio-grid {
   margin: auto; }
+
+span.title-icon img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
