@@ -33,7 +33,7 @@ get_header(); ?>
 				<?php $args = array('child_of' => 3);
 					$categories = get_categories( $args );
 					foreach($categories as $category) { 
-					    echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" class="sub-categories category-'.get_cat_id($category->name).' "' . '>' . $category->name.'</a> '; 
+					    echo '<span"' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" class="sub-categories category-'.get_cat_id($category->name).' "' . '>' . $category->name.'</span> '; 
 					}
 				?>
 			</div>
@@ -85,7 +85,7 @@ var print = true;
 var mobileApps = true;
 var websiteDesignDOM = jQuery(".category-website-design");
 var printDOM = jQuery(".category-print");
-var MobileAppsDOM = jQuery(".category-mobile-apps");
+var mobileAppsDOM = jQuery(".category-mobile-apps");
 var websiteDesignTrigger=jQuery(".category-4");
 var mobileAppsTrigger=jQuery(".category-5");
 var printTrigger=jQuery(".category-6");
@@ -93,17 +93,41 @@ websiteDesignTrigger.click(function() {
 	websiteDesign = true;
 	print = false;
 	mobileApps = false;
+	filterMaFolio();
 });
 printTrigger.click(function() {
 	websiteDesign = false;
 	print = true;
 	mobileApps = false;
+	filterMaFolio();
 });
 mobileAppsTrigger.click(function() {
 	websiteDesign = false;
 	print = false;
 	mobileApps = true;
+	filterMaFolio();
 });
+function filterMaFolio() {
+	websiteDesignDOM.hide();
+	printDOM.hide();
+	mobileAppsDOM.hide();
+
+	if (websiteDesign) {
+		websiteDesignDOM.show();
+	} else {
+		websiteDesignDOM.hide();
+	}
+	 if (print) {
+	 	printDOM.show();
+	} else {
+		printDOM.hide();
+	}
+	 if (mobileApps) {
+	 	mobileAppsDOM.show();
+	} else {
+		mobileAppsDOM.hide();
+	}
+}
 
 
 
