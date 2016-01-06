@@ -33,7 +33,7 @@ get_header(); ?>
 				<?php $args = array('child_of' => 3);
 					$categories = get_categories( $args );
 					foreach($categories as $category) { 
-					    echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" class="sub-categories"' . '>' . $category->name.'</a> '; 
+					    echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" class="sub-categories category-'.get_cat_id($category->name).' "' . '>' . $category->name.'</a> '; 
 					}
 				?>
 			</div>
@@ -43,14 +43,14 @@ get_header(); ?>
 		
 			<div class="portfolio-content
 			<?php 
-			$posttags = get_the_tags();
+			$posttags = get_post_class();
 			if ($posttags) {
 				foreach ($posttags as $tag) {
-					echo $tag->name . ' ';
+					echo $tag.' ';
 				}
 			}
 			?>">
-			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"
+			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 
 
 
@@ -79,4 +79,34 @@ get_header(); ?>
 
 
 <?php //get_sidebar(); ?>
+<script>
+var websiteDesign = true;
+var print = true;
+var mobileApps = true;
+var websiteDesignDOM = jQuery(".category-website-design");
+var printDOM = jQuery(".category-print");
+var MobileAppsDOM = jQuery(".category-mobile-apps");
+var websiteDesignTrigger=jQuery(".category-4");
+var mobileAppsTrigger=jQuery(".category-5");
+var printTrigger=jQuery(".category-6");
+websiteDesignTrigger.click(function() {
+	websiteDesign = true;
+	print = false;
+	mobileApps = false;
+});
+printTrigger.click(function() {
+	websiteDesign = false;
+	print = true;
+	mobileApps = false;
+});
+mobileAppsTrigger.click(function() {
+	websiteDesign = false;
+	print = false;
+	mobileApps = true;
+});
+
+
+
+</script>
 <?php get_footer(); ?>
+

@@ -1521,6 +1521,7 @@ div.sub-categoires {
 div.portfolio-content {
   /* margin-bottom: 1px; */
   /* margin-top: 1px; */
+  margin: 0px;
   height: 400px;
   overflow: hidden;
   text-align: center;
