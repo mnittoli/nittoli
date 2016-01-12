@@ -697,7 +697,7 @@ div.menu li.page_item a:hover {
   width: 25%; }
 
 div.site-content {
-  padding-top: 120px; }
+  padding-top: 50px; }
 
 .site-footer {
   clear: both;
@@ -909,6 +909,7 @@ h1.entry-title {
   font-size: 4.7em;
   font-weight: bold;
   letter-spacing: -.05em;
+  padding-top: 50px;
   margin: 0px;
   line-height: 1.1em;
   text-align: center; }
@@ -1085,8 +1086,7 @@ div.main-wrapper {
   max-width: 80%;
   margin: auto;
   max-width: 1100px;
-  width: 100%;
-  padding-top: 60px; }
+  width: 100%; }
 
 div.testimonials p {
   font-size: 22px; }
@@ -1305,6 +1305,38 @@ div.copyrights {
     font-family: "Lato", sans-serif;
     font-size: 12px;
     margin: auto; }
+
+div.service-outer-wrapper {
+  width: 100%;
+  background-color: #fff; }
+
+div.service-wrapper {
+  width: 1100px;
+  margin: auto; }
+
+div.service-content-wrapper {
+  text-align: middle;
+  display: flex;
+  justify-content: space-around; }
+
+div.service-content {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.625;
+  width: 210px;
+  min-width: 100px;
+  padding: 0px;
+  text-align: center; }
+  div.service-content h3 {
+    color: #333;
+    margin: 0 0 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 24px;
+    line-height: 29px; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -1568,5 +1600,18 @@ span.title-icon img {
   height: 50px;
   margin: auto;
   display: block; }
+
+div.sub-categories {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px; }
+  div.sub-categories span {
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 5px; }
+    div.sub-categories span:hover {
+      background-color: #29526F;
+      color: white; }
 
 /*# sourceMappingURL=style.css.map */

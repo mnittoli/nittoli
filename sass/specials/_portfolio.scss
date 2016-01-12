@@ -37,6 +37,8 @@ span.left-line, span.right-line {
 	border-bottom: 1px solid #ccc;
 }
 
+
+
 div.sub-categoires {
 		width: 500px;
 		margin: auto;
@@ -167,4 +169,22 @@ span.title-icon {
 	display: block;
 	}
 
+}
+
+div.sub-categories  {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+	span {
+
+	background-color: #fff;
+	padding: 7px;
+	
+	border-radius: 5px;
+	&:hover {
+	background-color: #29526F;
+	color: white;
+	}
+	}
 }
