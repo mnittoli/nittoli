@@ -14,36 +14,31 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			<div class="about-container">
-			
+	
+			<div class="about-container"><!-- Services Section -->
 
 				<?php get_template_part( 'template-parts/content', 'services' ); ?>
-
-				
-
 			
 			</div>
-		<div class="portfolio-container section-container">
-
-			<?php get_template_part( 'template-parts/content', 'portfolio' ); ?>
-			
-		</div>
-		<div class="testimonials section-container">
-
-			<?php get_template_part( 'template-parts/content', 'testimonials' ); ?>
-			
-		</div>
+			<div class="portfolio-class section-container"><!-- Portfolio Section -->
 
 
+				<?php get_template_part( 'template-parts/content', 'portfolio' ); ?>
+				
+			</div>
+			<div class="testimonials section-container">
 
+				<?php get_template_part( 'template-parts/content', 'testimonials' ); ?>
+				
+			</div>
 
 
 
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+
+
+
+	
 
  <?php //*get_sidebar(); ?>
 <?php get_footer(); ?>
