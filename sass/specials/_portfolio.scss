@@ -159,6 +159,19 @@ div.column div {
 
 #portfolio-grid {
 	margin: auto;
+	padding-bottom: 70px;
+}
+
+.clear:before,
+.clear:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.clear:before,
+.clear:after {
+	clear: both;
 }
 
 span.title-icon {

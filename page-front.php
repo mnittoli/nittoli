@@ -20,17 +20,13 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'services' ); ?>
 			
 			</div>
-			<div class="portfolio-class section-container"><!-- Portfolio Section -->
+			<div class="portfolio-class"><!-- Portfolio Section -->
 
 
 				<?php get_template_part( 'template-parts/content', 'portfolio' ); ?>
 				
 			</div>
-			<div class="testimonials section-container">
 
-				<?php get_template_part( 'template-parts/content', 'testimonials' ); ?>
-				
-			</div>
 
 
 
