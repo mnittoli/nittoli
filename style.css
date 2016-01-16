@@ -436,6 +436,8 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
@@ -550,10 +552,10 @@ a {
     position: relative;
     display: inline-block;
     padding-right: 0px;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
     margin-bottom: .5em;
-    width: 16%;
+    width: 13%;
     min-width: 100px; }
   .main-navigation a {
     display: block;
@@ -562,7 +564,9 @@ a {
     color: #fff;
     font-style: none;
     font-size: 1.2em;
-    padding-bottom: 2em; }
+    padding-bottom: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
 
 /* Small menu. */
 .menu-toggle {
@@ -886,7 +890,7 @@ div.intro-overlay {
   z-index: 100;
   background: rgba(0, 0, 0, 0.4);
   padding-bottom: 1em;
-  width: 80%;
+  width: 90%;
   margin: auto;
   vertical-align: middle; }
   @media (max-width: 850px) {
@@ -1356,8 +1360,7 @@ div.portfolio-wrapper {
   width: 100%; }
 
 div.portfolio-class {
-  padding-bottom: 70px;
-  height: 400px; }
+  padding-bottom: 70px; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -1576,6 +1579,7 @@ div.portfolio-content {
   /* margin-top: 1px; */
   margin: 0px;
   height: 400px;
+  border: 1px solid #d6dfe2;
   overflow: hidden;
   text-align: center;
   padding-bottom: 50px;
@@ -1646,5 +1650,23 @@ div.sub-categories {
     div.sub-categories span:hover {
       background-color: #29526F;
       color: white; }
+
+a.portfolio-button {
+  text-decoration: none;
+  width: 165px;
+  height: 50px;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  background-color: #ff4100;
+  border-radius: 5px;
+  transition: background-color 0.5s ease; }
+  a.portfolio-button:hover {
+    background-color: #D53F1C; }
 
 /*# sourceMappingURL=style.css.map */

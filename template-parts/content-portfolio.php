@@ -32,10 +32,13 @@
 					the_post_thumbnail();
 				}
 				?></a>
+
+
 				</div>
 <?php endforeach;
 wp_reset_postdata();?>
 </div><!-- Grid Ends -->
+<a href="http://localhost/wordpress/index.php/category/portfolio/" class="portfolio-button">See More Work</a>
 </div>
 
 
