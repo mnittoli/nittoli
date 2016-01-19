@@ -60,6 +60,11 @@
 		margin-bottom: .5em;
 		width: 13%;
 		min-width: 100px;
+		@media (max-width: 850px) {
+		display: block;
+		width: 80%;
+		margin: auto; 
+		}
 
 		&:hover > a,
 		&.focus > a {
@@ -115,6 +120,7 @@
 div.menu li.page_item a {
 	font-family: $font_skinny;
 	font-size: 17px;
+	text-transform: uppercase;
 
 }
 div.menu li.page_item a:hover {

@@ -6,6 +6,7 @@
 
 <?php $posts=get_posts( $args ); ?>
 <h2 class="front-section-heading"><?php echo category_description( get_category_by_slug('services')->term_id ); ?></h2>
+	
 
 <div class="service-content-wrapper">
 <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>

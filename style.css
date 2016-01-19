@@ -258,7 +258,8 @@ h1.site-title {
   letter-spacing: 2px;
   color: #fff;
   margin: 0px;
-  padding-top: 80px; }
+  padding-top: 120px;
+  line-height: 1; }
   @media (max-width: 1070px) {
     h1.site-title {
       font-size: 4.200em; } }
@@ -271,7 +272,7 @@ h1.site-title {
   @media (max-width: 850px) {
     h1.site-title {
       font-size: 3.000em;
-      padding-top: 40px; } }
+      padding-top: 70px; } }
   h1.site-title a {
     text-decoration: none;
     color: white; }
@@ -557,6 +558,11 @@ a {
     margin-bottom: .5em;
     width: 13%;
     min-width: 100px; }
+    @media (max-width: 850px) {
+      .main-navigation li {
+        display: block;
+        width: 80%;
+        margin: auto; } }
   .main-navigation a {
     display: block;
     padding: 1em 1em;
@@ -591,7 +597,8 @@ a {
 
 div.menu li.page_item a {
   font-family: "Lato", sans-serif;
-  font-size: 17px; }
+  font-size: 17px;
+  text-transform: uppercase; }
 
 div.menu li.page_item a:hover {
   color: black;
@@ -691,6 +698,9 @@ div.menu li.page_item a:hover {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.content-area {
+  padding-top: 80px; }
+
 .content-area {
   margin: auto;
   max-width: 100%; }
@@ -889,7 +899,7 @@ div.intro-overlay {
   position: relative;
   z-index: 100;
   background: rgba(0, 0, 0, 0.4);
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   width: 90%;
   margin: auto;
   vertical-align: middle; }
@@ -1315,6 +1325,9 @@ div.service-wrapper {
   width: 1100px;
   margin: auto;
   text-align: center; }
+  @media (max-width: 850px) {
+    div.service-wrapper {
+      max-width: 100%; } }
 
 h1.categoryName {
   margin-bottom: 40px; }
@@ -1323,6 +1336,11 @@ div.service-content-wrapper {
   text-align: middle;
   display: flex;
   justify-content: space-around; }
+  @media (max-width: 850px) {
+    div.service-content-wrapper {
+      max-width: 100%;
+      flex-direction: column;
+      justify-content: flex-start; } }
 
 div.service-content {
   font-family: "Lato", sans-serif;
@@ -1333,8 +1351,13 @@ div.service-content {
   width: 210px;
   min-width: 100px;
   padding: 0px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
   text-align: center; }
+  @media (max-width: 850px) {
+    div.service-content {
+      width: 90%;
+      margin: auto;
+      padding-bottom: 10px; } }
   div.service-content h3 {
     color: #333;
     margin: 0 0 20px;
@@ -1346,12 +1369,16 @@ div.service-content {
 
 h2.front-section-heading {
   margin-top: 0px;
-  padding-top: 100px;
+  margin-bottom: 5px;
+  padding-top: 70px;
   text-align: center;
   color: #333;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
+  @media (max-width: 850px) {
+    h2.front-section-heading {
+      padding-top: 40px; } }
   h2.front-section-heading p {
     margin-top: 0px;
     color: #333; }
@@ -1481,6 +1508,9 @@ object {
 .gallery-caption {
   display: block; }
 
+.archive .content-area {
+  padding-top: 80px; }
+
 div.portfolio-post {
   width: 300px;
   margin: auto;
@@ -1501,14 +1531,15 @@ div.line-container {
   width: 221px;
   height: 10px;
   margin: auto;
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
   div.line-container span {
     display: inline-block; }
 
 span.middle-line {
   width: 10px;
   height: 10px;
-  background: #ccc;
+  background: transparent;
+  border: 1px solid #ccc;
   border-radius: 50%;
   vertical-align: middle;
   margin-bottom: -5px; }
@@ -1534,44 +1565,7 @@ div.sub-categoires {
       background-color: #284F6C;
       color: white; }
 
-#portfolio-grid[data-columns]::before {
-  content: '4 .column.size-1of4'; }
-
-/* These are the classes that are going to be applied: */
-.column {
-  float: left;
-  padding: 0px 0px;
-  /* margin: 1px 1px; */ }
-  .column:hover {
-    color: #D3D3D3 !important;
-    background-color: transparent !important; }
-
-@media screen and (max-width: 480px) {
-  #portfolio-grid[data-columns]::before {
-    content: '1 .column.size-1of1'; } }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  #portfolio-grid[data-columns]::before {
-    content: '2 .column.size-1of2'; } }
-@media screen and (min-width: 769px) {
-  #portfolio-grid[data-columns]::before {
-    content: '3 .column.size-1of3'; } }
-@media screen and (min-width: 1000px) {
-  #portfolio-grid[data-columns]::before {
-    content: '4 .column.size-1of4'; } }
-/* Again, you’re free to use and define the classes: */
-.column {
-  float: left; }
-
-.size-1of1 {
-  width: 100%; }
-
-.size-1of2 {
-  width: 50%; }
-
-.size-1of3 {
-  width: 33.333%; }
-
-.size-1of4 {
+div.grid-item {
   width: 25%; }
 
 div.portfolio-content {
@@ -1642,7 +1636,7 @@ div.sub-categories {
   width: 100%;
   text-align: center;
   margin: auto;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
   div.sub-categories span {
     background-color: #fff;
     padding: 7px;

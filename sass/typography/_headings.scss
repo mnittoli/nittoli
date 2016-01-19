@@ -1,3 +1,5 @@
+
+
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	text-transform: capitalize;
@@ -16,7 +18,7 @@ h1.site-title {
 	}
 	@media (max-width: 850px) {
 	font-size: 3.000em;
-	padding-top: 40px;
+	padding-top: 70px;
 	}
 	font-weight: 900;
 	text-align: center;
@@ -24,7 +26,8 @@ h1.site-title {
 	letter-spacing: 2px;
 	color: $color__light-1;
 	margin: 0px;
-	padding-top: 80px;
+	padding-top: 120px;
+	line-height: 1;
 		a {
 			text-decoration: none;
 			color: white;
@@ -76,13 +79,12 @@ div.menu li.page_item {
 	border: solid 1px rgba(255,255,255,.7);
 	border-radius: 2px;
 	text-align: center;
+
 	a {
 	width: 100%;
 	
 	padding: 5px;
-	@media (max-width:700px) {
 	
-	}
 	}
 
 }

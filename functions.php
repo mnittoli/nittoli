@@ -158,7 +158,7 @@ require get_template_directory() . '/inc/jetpack.php';
 function my_scripts_method() {
 	wp_enqueue_script(
 		'custom-script',
-		get_stylesheet_directory_uri() . '/js/salvattore.min.js',
+		get_stylesheet_directory_uri() . '/js/isotope.pkgd.min.js',
 		array( 'jquery' )
 	);
 }

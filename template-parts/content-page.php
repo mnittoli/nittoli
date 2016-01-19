@@ -11,14 +11,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h2 class="front-section-heading">', '</h2>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="line-container"><!-- .line -->
+	<!--<div class="line-container"><!-- .line 
 			<span class="left-line"></span>
 			<span class="middle-line"></span>
 			<span class="right-line"></span>
-	</div>
+	</div> -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>

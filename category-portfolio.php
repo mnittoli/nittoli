@@ -20,12 +20,12 @@ get_header(); ?>
 
 			<header class="page-header">
 				
-					<h1 class="entry-title"> <?php single_cat_title(); ?></h1>
-					<div class="line-container"><!-- .line -->
+					<h2 class="front-section-heading"> <?php single_cat_title(); ?></h2>
+					<!--<div class="line-container"><!-- .line 
 						<span class="left-line"></span>
 						<span class="middle-line"></span>
 						<span class="right-line"></span>
-					</div>
+					</div>-->
 				
 			</header><!-- .page-header -->
 
@@ -42,7 +42,7 @@ get_header(); ?>
 			<div id="portfolio-grid" data-columns><!-- Grid Begins -->
 			<?php while ( have_posts() ) : the_post(); ?>
 		
-			<div class="portfolio-content
+			<div class="portfolio-content grid-item
 			<?php 
 			$posttags = get_post_class();
 			if ($posttags) {
@@ -81,7 +81,13 @@ get_header(); ?>
 
 <?php //get_sidebar(); ?>
 <script>
-var websiteDesign = true;
+jQuery('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+
+/*var websiteDesign = true;
 var print = true;
 var mobileApps = true;
 var all = true;
@@ -139,7 +145,7 @@ function filterMaFolio() {
 	
 	 /*if (all) {
 	 	aniShow(allDOM);
-	} else {*/
+	} else {
 	 	
 
 allDOM.hide();
@@ -159,7 +165,7 @@ allDOM.hide();
 		aniHide(mobileAppsDOM);
 	//}
 	}
-	}
+	}*/
 </script>
 <?php get_footer(); ?>
 

@@ -1,3 +1,6 @@
+.content-area{
+	padding-top: 80px;
+}
 
 .content-area {
 	margin: auto;
@@ -219,7 +222,7 @@ div.intro-overlay {
 	position: relative;
 	z-index: 100;
 	background: rgba(0,0,0,0.4);
-	padding-bottom: 1em;
+	padding-bottom: 2em;
 	width: 90%;
 	@media (max-width: 850px) { /* Bird Scale Breakpoint  */
 		width: 98%;

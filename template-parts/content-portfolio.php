@@ -2,6 +2,9 @@
 <div>
 
 <h2 class="front-section-heading"><?php echo category_description( get_category_by_slug('featured-portfolio')->term_id ); ?></h2>
+
+	
+
 <div id="portfolio-grid" class="clear" data-columns><!-- Grid Begins -->
 	<?php $args = array(
 		'category_name' => 'featured-portfolio'
