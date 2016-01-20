@@ -33,7 +33,7 @@ get_header(); ?>
 				<?php $args = array('child_of' => 3);
 					$categories = get_categories( $args );
 					foreach($categories as $category) { 
-					    echo '<span onclick=filteritman("'.$category->name.'") title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" class="sub-categories category-'.get_cat_id($category->name).' "' . '>' . $category->name.'</span> '; 
+					    echo '<span onclick=filteritman("'.$category->slug.'") title="' . sprintf( __( "View all posts in %s" ), $category->slug ) . '" class="sub-categories category-'.get_cat_id($category->slug).' "' . '>' . $category->slug.'</span> '; 
 					}
 				?>
 			</div>
