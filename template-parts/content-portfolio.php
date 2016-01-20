@@ -5,7 +5,7 @@
 
 	
 
-<div id="portfolio-grid" class="clear" data-columns><!-- Grid Begins -->
+<div id="portfolio-grid"><!-- Grid Begins -->
 	<?php $args = array(
 		'category_name' => 'featured-portfolio'
 	); ?>
@@ -23,7 +23,7 @@
 					echo $tag.' ';
 				}
 			}
-			?>">
+			?>" style="width:25%">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 
 
@@ -43,7 +43,19 @@ wp_reset_postdata();?>
 </div><!-- Grid Ends -->
 <a href="http://localhost/wordpress/index.php/category/portfolio/" class="portfolio-button">See More Work</a>
 </div>
-
+<script>
+$grid = jQuery('#portfolio-grid').isotope({
+  // options
+  itemSelector: '.portfolio-content',
+  layoutMode: 'fitRows'
+});
+function filteritman(cat) {
+	$grid.isotope({ filter: '.category-' + cat });	
+}
+function showall() {
+$grid.isotope({ filter: '*' });
+}
+</script>
 
 				
 

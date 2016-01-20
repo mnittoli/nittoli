@@ -1576,8 +1576,7 @@ div.portfolio-content {
   border: 1px solid #d6dfe2;
   overflow: hidden;
   text-align: center;
-  padding-bottom: 50px;
-  transition: 3s all ease; }
+  padding-bottom: 50px; }
   div.portfolio-content a {
     color: #000; }
 
