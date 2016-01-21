@@ -1599,7 +1599,7 @@ div.portfolio-title {
     height: 50px;
     padding-bottom: 20px; }
   div.portfolio-title:hover {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     margin-bottom: -400px; }
     div.portfolio-title:hover div.title-txt {
