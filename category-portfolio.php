@@ -30,7 +30,7 @@ get_header(); ?>
 
 			<div class="sub-categories">
 				<span class="sub-categories category-all" onclick=showall()>All</span>
-				<?php $args = array('child_of' => 3);
+				<?php $args = array('child_of' => 10);
 					$categories = get_categories( $args );
 					foreach($categories as $category) { 
 					    echo '<span onclick=filteritman("'.$category->slug.'") title="' . sprintf( __( "View all posts in %s" ), $category->slug ) . '" class="sub-categories category-'.get_cat_id($category->slug).' "' . '>' . $category->slug.'</span> '; 
@@ -50,7 +50,7 @@ get_header(); ?>
 				}
 			}
 			?>" style="width:25%">
-			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+			<a href="<?php the_permalink(); ?>">
 
 
 
@@ -58,7 +58,7 @@ get_header(); ?>
 				<div class="portfolio-title"><div class="title-txt"><span class="title-icon">
 				<img src="<?php echo get_template_directory_uri() . '/images/plussign5.png'; ?>"/></span><p><?php the_title(); ?></p></div></div>
 				<?php if (has_post_thumbnail() ){
-					the_post_thumbnail();
+					the_post_thumbnail('full');
 				}
 				?></a>
 				</div>

@@ -165,10 +165,6 @@ function my_scripts_method() {
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
-?>
-
-<?php
-
 // create excerpt
 function new_excerpt_more( $more ) {
     return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'your-text-domain' ) . '</a>';
@@ -179,11 +175,4 @@ function custom_excerpt_length( $length ) {
 						return 20;
 					}
 					add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
-function filter_ptags_on_images($content){
-   return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
-}
-
-add_filter('the_content', 'filter_ptags_on_images');
-
 ?>
