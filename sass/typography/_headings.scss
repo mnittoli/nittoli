@@ -75,7 +75,7 @@ h1.categoryName {
 	font-family: $font__display;
 	font-weight: 400;
 }
-div.menu li.page_item {
+.intro-overlay ul.menu li.menu-item {
 	border: solid 1px rgba(255,255,255,.7);
 	border-radius: 2px;
 	text-align: center;
@@ -87,4 +87,7 @@ div.menu li.page_item {
 	
 	}
 
+}
+.secondary-navigation ul li {
+	display: inline-block;
 }

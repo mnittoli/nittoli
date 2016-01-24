@@ -25,7 +25,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nittoli' ); ?></a>
-		<?php if ( is_front_page() || is_home() ) : ?>
+		<?php if ( is_front_page() ) : ?>
 	<header id="masthead" class="site-header" role="banner" style="background: url('<?php echo( get_header_image() ); ?>');">
 		<div class="overlay">
 			

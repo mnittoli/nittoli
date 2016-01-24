@@ -49,7 +49,7 @@ get_header(); ?>
 					echo $tag.' ';
 				}
 			}
-			?>" style="width:25%">
+			?>" style="width:26%">
 			<a href="<?php the_permalink(); ?>">
 
 
