@@ -14,7 +14,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+	<?php query_posts('posts_per_page=100'); ?>
 	<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -73,7 +73,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+		<?php wp_reset_query(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
